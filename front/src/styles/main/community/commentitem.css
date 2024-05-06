@@ -1,0 +1,90 @@
+.free_comment_list_line {
+  font-family: 'NanumSquareR';
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(185, 185, 185);
+  padding: 10px;
+  height: 40px;
+  font-size: 14px;
+}
+
+.free_comment_nickname_line {
+  width: 15%;
+  font-size: 13px;
+}
+
+.free_comment_content_line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.free_comment_fr {
+  width: 10%;
+  font-size: 13px;
+  text-align: right;
+  color: gray;
+}
+
+.free_comment_date {
+  float: left;
+  font-size: 12px;
+  vertical-align: top;
+}
+
+.comment_no_btn {
+  all: unset;
+  color: #ef6253;
+  background-color: #fff5f5;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 12px;
+  width: 10%;
+  text-align: center;
+}
+
+.comment_ok_btn {
+  all: unset;
+  color: #41b979;
+  background-color: #f2fafa;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 12px;
+  width: 10%;
+  text-align: center;
+}
+
+.free_comment_content {
+  display: flex;
+  align-items: center;
+}
+
+.free_comment_txt {
+  margin-right: 20px;
+  font-size: 13px;
+}
+
+.free_comment_delete {
+  all: unset;
+  color: gray;
+  border: 1px solid gainsboro;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 11px;
+}
+
+.free_comment_delete:hover {
+  all: unset;
+  cursor: pointer;
+  background-color: gray;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.board_main_size {
+  height: 200px;
+}

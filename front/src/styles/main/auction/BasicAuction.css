@@ -1,0 +1,181 @@
+.image-board {
+  font-family: 'NanumSquareR';
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 가로 4열 */
+  grid-auto-rows: minmax(200px, auto); /* 세로 행의 최소 높이 설정, 내용에 따라 자동 조절될 수 있음 */
+  gap: 20px; /* 그리드 아이템 사이의 간격 */
+}
+
+.image-item {
+  font-family: 'NanumSquareR';
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* 이미지가 컨테이너를 넘어가지 않도록 함 */
+  border: 1px solid #ddd; /* 테두리 스타일 */
+  border-radius: 8px; /* 테두리 둥글게 */
+  position: relative;
+}
+
+.image-item img {
+  width: 100%; /* 컨테이너 너비에 맞게 조절 */
+  height: 180px; /* 이미지 높이 고정 */
+  object-fit: cover; /* 이미지 비율을 유지하며 커버링 */
+}
+
+.image-info,
+.image-details {
+  padding: 12px 15px; /* 내부 패딩 조정 */
+  background-color: #ffffff; /* 배경색 변경 */
+  border-top: none; /* 상단 경계선 제거 */
+}
+
+.image-info h3 {
+  font-size: 17px; /* 조금 더 섬세하게 조정 */
+  color: #333; /* 진한 회색으로 제목 색상 설정 */
+  font-weight: bold; /* 폰트 굵기를 더욱 강조 */
+}
+
+.image-info h4 {
+  font-size: 22px; /* 조금 더 섬세하게 조정 */
+  color: #333; /* 진한 회색으로 제목 색상 설정 */
+  font-weight: bold; /* 폰트 굵기를 더욱 강조 */
+  margin-left: -14px;
+}
+
+.image-details {
+  padding: 0px;
+  margin-top: 10px;
+}
+
+.image-info h3,
+.image-details p {
+  margin: 5px 0; /* 텍스트 간의 여백 */
+  text-align: left; /* 텍스트 왼쪽 정렬 */
+}
+
+.image-item:hover {
+  transform: translateY(-5px); /* 호버 시 약간 위로 올라가게 조정 */
+  transform: scale(1.05); /* 호버 시 약간 
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* 그림자 효과 더욱 강조 */
+}
+
+/* 경매 상태 변화  */
+.auction-status {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff; /* 텍스트 색상을 흰색으로 */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  z-index: 1; /* 상위에 표시되도록 z-index 설정 */
+  font-weight: bold; /* 글자를 굵게 */
+  text-transform: uppercase; /* 대문자로 텍스트 변환 */
+  text-align: center;
+}
+
+/* 경매 상태에 따른 배경색 설정 */
+.auction-waiting {
+  background-color: #f0ad4e;
+} /* 대기중 - 주황색 */
+.auction-active {
+  background-color: #5cb85c;
+} /* 진행중 - 녹색 */
+.auction-ended {
+  background-color: #d9534f;
+} /* 종료됨 - 빨간색 */
+
+/* Pagination styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination li a {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 5px;
+}
+
+.pagination li a:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.pagination .active a {
+  background-color: #333;
+  color: white;
+  border-color: #333;
+}
+
+.pagination .disabled a {
+  color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+.pagination .break a {
+  cursor: default;
+}
+
+.image-info_sub {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.image-info_sub1 {
+  font-size: 13px;
+  color: gray;
+  font-weight: 300;
+  text-align: left;
+}
+
+.image-details_writer {
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 13px;
+  color: gray;
+}
+
+.image-details2 {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.image-details_btn1 {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid gray;
+  color: gray;
+  border-radius: 5px;
+  width: 70%;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.image-details_btn2 {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ef6253;
+  color: #ef6253;
+  border-radius: 5px;
+  width: 70%;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.image-info_title {
+  margin-top: 20px;
+}

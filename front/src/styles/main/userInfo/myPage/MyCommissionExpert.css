@@ -1,0 +1,114 @@
+.MyCommissionExpert_div {
+  font-family: 'NanumSquareR';
+  padding: 15px;
+}
+
+.MyCommissionExpert_title {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.MyCommissionExpert_sub {
+
+}
+
+.MyCommissionExpert_hr {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  border: none;
+  height: 3px;
+  background-color: black;
+}
+
+/* 신청 테이블 */
+.MyCommissionExpert_table_column {
+  font-weight: 900;
+  display: flex;
+  padding: 5px;
+  border-bottom: 3px solid black;
+}
+
+.MyCommissionExpert_table_column0 {
+  width: 20%;
+}
+.MyCommissionExpert_table_column1 {
+  width: 12%;
+}
+
+.MyCommissionExpert_table_column2 {
+  width: 9%;
+}
+.MyCommissionExpert_table_column3 {
+  width: 9%;
+}
+.MyCommissionExpert_table_column4 {
+  width: 30%;
+  word-wrap: break-word; 
+}
+.MyCommissionExpert_table_column5 {
+  width: 10%;
+}
+.MyCommissionExpert_table_column6 {
+  width: 10%;
+  display: flex;
+}
+
+.MyCommissionExpert_table_column6 div {
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.MyCommissionExpert_table_column6 div:hover {
+  cursor: pointer;
+  padding: 5px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.MyCommissionExpert_table_row {
+  font-size: 15px;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.MyCommissionExpert_table_column0 img{
+  width:90%;
+}
+
+.aa{
+  
+  display: flex;
+  justify-content: right;
+}
+
+.MyCommissionReq_sub_btn div {
+  border: 1px solid #ebebeb;
+  padding: 5px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.MyCommissionReq_sub_btn {
+  width: 80%;
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin-right: 5px;
+  text-align: center;
+}
+
+.MyCommissionReq_sub_btn:hover {
+  cursor: pointer;
+  padding: 5px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  margin-right: 5px;
+}

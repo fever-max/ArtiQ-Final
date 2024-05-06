@@ -1,0 +1,232 @@
+.classify {
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.cursor {
+  padding-left: 4px;
+}
+
+.classifyy {
+  width: 100%;
+  height: 95px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.input100 {
+  flex-grow: 1;
+}
+
+.careerTextarea {
+  width: 100%;
+  height: 100px;
+  padding-top: 8px;
+  margin-top: 5px;
+}
+
+.classify,
+.classifyy,
+.careerTextarea {
+  border: none; /* 테두리 없음 */
+  outline: none; /* 아웃라인 없음 */
+  border-bottom: 1px solid #ebebeb;
+}
+
+.ERDiv {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.ERDiv_main {
+  margin: 20px;
+  width: 80%;
+}
+
+.ER_title {
+  font-family: 'NanumSquareR';
+  font-weight: 900;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+input {
+  font-family: 'NanumSquareR';
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ebebeb;
+  outline: none;
+  height: 40px;
+}
+
+/* .ER_btn {
+    pointer-events: none;
+    font-size: 15px;
+    font-family: 'NanumSquareR';
+    height: 50px;
+    background-color: #ccc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  } */
+
+.ERDiv_main form div h3 {
+  margin-top: 10px;
+  font-weight: 900;
+  font-size: 13px;
+}
+
+input::-webkit-inner-spin-button {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+/*  */
+
+.genre-checkboxes {
+  font-family: 'NanumSquareR';
+  display: flex;
+  padding-right: 10px;
+  gap: 10px;
+}
+
+.genre-checkbox {
+  font-family: 'NanumSquareR';
+  display: flex; /* 체크박스와 텍스트를 가로로 정렬하기 위해 */
+  align-items: center; /* 체크박스와 텍스트를 세로로 가운데 정렬하기 위해 */
+  width: 25%;
+  flex-direction: row;
+}
+
+.genre-checkbox label {
+  display: flex;
+  align-items: center;
+}
+
+.genre-checkbox input[type='checkbox'] {
+  transform: scale(0.65); /* 체크박스 크기를 줄이는 비율 조절 */
+  margin-right: 6px; /* 체크박스와 텍스트 사이의 간격 조절 */
+
+  appearance: none; /* 기본 스타일 제거 */
+  -webkit-appearance: none; /* 웹킷 브라우저 지원 */
+  -moz-appearance: none; /* 모질라 브라우저 지원 */
+  -ms-appearance: none; /* 마이크로소프트 브라우저 지원 */
+  -o-appearance: none; /* 오페라 브라우저 지원 */
+  height: 20px; /* 체크박스 크기 조절 */
+  width: 20px; /* 체크박스 크기 조절 */
+  border: 2px solid rgba(0, 0, 0, 0.539); /* 테두리 스타일 지정 */
+  border-radius: 4px; /* 테두리의 모서리를 둥글게 만듦 */
+  background-color: white; /* 배경색 지정 */
+}
+
+.genre-checkbox input[type='checkbox']:checked {
+  background-color: rgba(0, 0, 0, 0.326); /* 체크된 상태의 배경색 지정 */
+}
+
+.subCategoryPadding1 {
+  padding-left: 2px;
+}
+
+.subCategoryPadding2 {
+  padding-left: 8px;
+  font-size: 14px;
+}
+
+/* 경력 체크박스 */
+.genre-checkboxes-title {
+  font-family: 'NanumSquareR';
+  font-size: 14px;
+  margin-top: 5px;
+  margin-right: 20px;
+  margin-left: 3px;
+}
+
+.genre-checkboxes2 {
+  font-family: 'NanumSquareR';
+  display: flex;
+  padding-right: 5px;
+  gap: 10px;
+  margin-left: 3px;
+}
+
+.genre-checkbox2 {
+  display: flex; /* 체크박스와 텍스트를 가로로 정렬하기 위해 */
+  align-items: center; /* 체크박스와 텍스트를 세로로 가운데 정렬하기 위해 */
+  margin-left: 3px;
+  font-size: 14px;
+  margin-top: 5px !important;
+}
+
+.genre-checkbox2 label {
+  display: flex;
+  align-items: center;
+}
+
+.genre-checkbox2 input[type='checkbox'] {
+  transform: scale(0.6); /* 체크박스 크기를 줄이는 비율 조절 */
+  margin-right: 3px; /* 체크박스와 텍스트 사이의 간격 조절 */
+  appearance: none; /* 기본 스타일 제거 */
+  -webkit-appearance: none; /* 웹킷 브라우저 지원 */
+  -moz-appearance: none; /* 모질라 브라우저 지원 */
+  -ms-appearance: none; /* 마이크로소프트 브라우저 지원 */
+  -o-appearance: none; /* 오페라 브라우저 지원 */
+  height: 20px; /* 체크박스 크기 조절 */
+  width: 20px; /* 체크박스 크기 조절 */
+  border: 2px solid rgba(0, 0, 0, 0.539); /* 테두리 스타일 지정 */
+  border-radius: 4px; /* 테두리의 모서리를 둥글게 만듦 */
+  background-color: white; /* 배경색 지정 */
+}
+
+.genre-checkbox2 input[type='checkbox']:checked {
+  background-color: rgba(0, 0, 0, 0.326); /* 체크된 상태의 배경색 지정 */
+}
+
+
+.commission_btn {
+  font-size: 15px;
+  font-weight: 900;
+  height: 50px;
+  background-color: #ccc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  }
+  
+  .commission_btn.active {
+  font-size: 15px;
+  font-weight: 900;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  }
+
+.parent1{
+  display: flex;
+  align-items: center;
+}

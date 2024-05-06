@@ -1,0 +1,431 @@
+.home_div {
+  font-family: 'NanumSquareR';
+  margin-left: -300px;
+  margin-right: -300px;
+}
+
+/* 메인 디자인 */
+.home_div_main {
+  width: 100%;
+  background-color: #fafafa;
+  display: flex;
+  margin-bottom: 20px;
+  height: 450px;
+}
+
+.home_div_main_txt {
+  padding-top: 100px;
+  padding-left: 200px;
+  width: 35%;
+}
+
+.home_div_main_img {
+  width: 65%;
+}
+
+.home_div_main_img2 {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.home_dots {
+  bottom: 10px;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.home_dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #bbb;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.home_dot.active {
+  background-color: #555;
+}
+
+.home_div_main_txt1 {
+  font-weight: 900;
+  margin-left: 10px;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.home_div_main_txt2 {
+  font-size: 15px;
+  margin-left: 10px;
+  color: gray;
+  margin-bottom: 50px;
+}
+
+.home_div_main_btn a {
+  margin-left: 10px;
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid gray;
+  font-size: 13px;
+  font-family: 'NanumSquareR';
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.home_div_main_btn a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* 라이브경매 */
+.home_liveAuction_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 20px;
+}
+
+.home_liveAuction_txt {
+  padding-left: 50px;
+  width: 30%;
+}
+
+.home_liveAuction_txt_title {
+  font-size: 23px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.home_liveAuction_txt_time {
+  font-size: 15px;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.home_liveAuction_txt_time2 {
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  margin-bottom: 50px;
+}
+
+.home_liveAuction_txt_btn a {
+  width: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid gray;
+  font-size: 13px;
+  font-family: 'NanumSquareR';
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.home_liveAuction_txt_btn a:hover {
+  background-color: black;
+  color: white;
+}
+
+.home_liveAuction_imgContent {
+}
+
+.home_liveAuction_img {
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.home_liveAuction_title {
+  margin-left: 300px;
+  margin-right: 300px;
+  font-size: 20px;
+  font-weight: 900;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.home_title_btn {
+  font-size: 15px;
+  color: #ff002f;
+  background-color: #fff5f5;
+  margin-right: 10px;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.home_title_sub {
+  display: flex;
+}
+
+/* 일반경매 */
+.home_basicAuction_div {
+  margin-right: 300px;
+  margin-left: 300px;
+  padding: 20px;
+  border-bottom: 1px solid gainsboro;
+  margin-bottom: 50px;
+}
+
+.home_basicAuction_content {
+  display: flex;
+}
+.home_basicAuction_content_sub {
+  padding: 5px;
+  width: 20%;
+}
+
+.home_basicAuction_img {
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out; /* 애니메이션 속도 및 타이밍 조절 */
+}
+
+.home_basicAuction_img:hover {
+  transform: scale(1.05); /* 호버 시 이미지 크기를 약간 늘림 */
+}
+
+.image-container {
+  position: relative;
+}
+
+.overlay {
+  font-family: 'NanumSquareR';
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 흐리게 만들기 위한 배경색 */
+  opacity: 0; /* 처음에는 투명하게 설정 */
+  transition: opacity 0.5s ease; /* 애니메이션 속도 및 타이밍 조절 */
+  display: flex;
+  padding-left: 10px;
+  align-items: center;
+}
+
+.overlay:hover {
+  opacity: 1; /* 호버 시 투명도를 1로 설정하여 어두워지게 함 */
+}
+
+.data_year {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.data_technique {
+  color: white;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.data_stndrd {
+  color: white;
+  font-size: 15px;
+}
+
+.home_basicAuction_title {
+  margin-top: 5px;
+  font-weight: 900;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.home_basicAuction_btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.home_basicAuction_writer {
+  font-size: 15px;
+  color: gray;
+}
+
+/* 전문가 현황 */
+.home_expertList_div {
+  margin-right: 300px;
+  margin-left: 300px;
+  padding: 20px;
+  border-bottom: 1px solid gainsboro;
+  margin-bottom: 50px;
+}
+
+.home_expertList_content {
+  display: flex;
+}
+
+.home_expertList_content_sub {
+  display: flex;
+  width: 50%;
+}
+
+.home_expertList_content_img img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  cursor: pointer;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.home_expertList_content_img img:hover {
+  transform: scale(1.05);
+}
+
+.home_expertList_content_txt {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.home_expertList_content_name {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.home_expertList_content_name_dot {
+  font-size: 13px;
+  border-radius: 5px;
+  background-color: #f2fafa;
+  color: #39c3bc;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.home_expertList_content_field,
+.home_expertList_content_career {
+  font-size: 13px;
+  color: gray;
+  margin-bottom: 5px;
+}
+
+.home_expertList_content_msg {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+/* 커뮤니티 */
+.home_community_div {
+  margin-right: 300px;
+  margin-left: 300px;
+  padding: 20px;
+  border-bottom: 1px solid gainsboro;
+  margin-bottom: 50px;
+}
+
+.home_community_content_title {
+  display: flex;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 900;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.home_community_content_title1 {
+  width: 20%;
+}
+
+.home_community_content_title2 {
+  width: 40%;
+}
+
+.home_community_content_title3 {
+  width: 20%;
+}
+
+.home_community_content_title4 {
+  width: 10%;
+}
+
+.home_community_content_title5 {
+  width: 10%;
+}
+
+.home_community_content_title6 {
+  width: 10%;
+}
+
+.home_community_content_sub {
+  font-size: 14px;
+  display: flex;
+  text-align: center;
+  border-bottom: 1px solid gainsboro;
+  padding: 5px;
+}
+
+.home_community_content_sub2 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: 'NanumSquareR';
+  display: flex;
+  width: 100%;
+}
+
+.home_community_content_sub:hover {
+  display: flex;
+  width: 100%;
+  background-color: rgba(211, 211, 211, 0.5);
+}
+
+/* 공통 */
+.home_hr {
+  border: none;
+  height: 3px;
+  background-color: gainsboro;
+}
+
+.home_title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.home_title > div:first-child {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.home_title > div:last-child > a {
+  display: flex;
+  width: 70px;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: 'NanumSquareR';
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.home_title > div:last-child > a:hover {
+}
+
+.arrow-icon {
+  vertical-align: middle;
+  transition: transform 0.3s ease-in-out;
+}
+
+.home_community_link:hover .arrow-icon {
+  transform: translateX(5px); /* 화살표를 우측으로 약간 이동시킵니다. */
+}
+
+.home_community_link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

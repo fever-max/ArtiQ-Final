@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px 5px;
+}
+
+.content {
+  margin: 0px 12px 10px 12px;
+  line-height: 1.3;
+}
+
+.list {
+  margin-right: 100px;
+  margin: 4px;
+}
+
+.image img {
+  max-width: 90%;
+  margin-top: 10px;
+  /* height: auto; */
+}
+
+.centered-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pname {
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'NanumSquareR';
+}
+
+.pfield1 {
+  color: #595959;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 5px;
+  font-family: 'NanumSquareR';
+}
+
+.pfield2 {
+  color: #595959;
+  font-weight: bold;
+  font-size: 13.4px;
+  margin-top: 5px;
+  font-family: 'NanumSquareR';
+}
+
+.pcarrer {
+  color: #868686;
+  font-size: 15px;
+  margin-top: 10px;
+  font-family: 'NanumSquareR';
+}
+
+.ERDiv {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.ERDiv_main {
+  margin: 20px;
+  width: 80%;
+}
+
+.ER_title {
+  font-family: 'NanumSquareR';
+  font-weight: 900;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+input {
+  font-family: 'NanumSquareR';
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ebebeb;
+  outline: none;
+  height: 40px;
+}
+
+input::-webkit-inner-spin-button {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.slick-dots li button:before {
+  font-size: 10px;
+}
+
+.centered-image img {
+  border-radius: 8px;
+}
+
+.parent {
+  width: 100%;
+  display: flex;
+}
+
+.first {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second {
+  flex: 1;
+  width: 94%;
+}
+
+.third {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-hover-effect {
+  transition: opacity 0.3s ease-in-out; /* 변화를 부드럽게 만들기 위해 transition 추가 */
+}
+
+.icon-hover-effect:hover {
+  opacity: 0.8; /* 마우스를 올렸을 때 투명도를 줄여 아이콘이 진해지도록 설정 */
+}

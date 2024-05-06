@@ -1,0 +1,86 @@
+/* 모달 기본 스타일 */
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+  z-index: 1000;
+}
+
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
+}
+/* 모달 내부 스타일 */
+.modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  background: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+  width: 90%;
+}
+
+/* 모달 내 입력 필드 스타일 */
+.modal-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* 모달 내 버튼 스타일 */
+.modal-button {
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  transition: background-color 200ms ease-in-out;
+  display: block;  /* 버튼을 블록 요소로 설정하여 줄바꿈 */
+}
+
+.modal-button:hover {
+  background-color: #0056b3;
+}
+
+.modal-close-button {
+  background-color: #6c757d;
+}
+
+.modal-close-button:hover {
+  background-color: #5a6268;
+}
+
+/* 입찰 수정 버튼 스타일 */
+.update-bid-button {
+  background-color: #28a745;  /* 녹색 계열의 배경 */
+}
+
+.update-bid-button:hover {
+  background-color: #218838;
+}
+
+/* 입찰 삭제 버튼 스타일 */
+.delete-bid-button {
+  background-color: #dc3545;  /* 적색 계열의 배경 */
+}
+
+.delete-bid-button:hover {
+  background-color: #c82333;
+}

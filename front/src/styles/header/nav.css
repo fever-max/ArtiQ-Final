@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'NanumSquareR';
+  src: url('../../fonts/NanumSquareOTF_acR.otf');
+}
+
+.nav_ul {
+  font-family: 'NanumSquareR';
+}
+
+.nav_ul li a {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-family: 'NanumSquareR';
+}
+
+/* nav 디자인 */
+.nav_box {
+  display: flex;
+  align-items: end;
+}
+
+.nav {
+  margin-left: 20px;
+}
+
+.nav_li {
+  margin: 30px;
+}
+
+nav {
+  width: 100%;
+  max-width: 500px;
+}
+
+nav ul {
+  list-style: none;
+  z-index: 2;
+}
+nav a {
+  color: #000;
+  margin-top: 5px;
+  text-decoration: none;
+}
+nav > ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+nav > ul > li {
+  position: relative;
+}
+nav > ul > li > a {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+nav > ul > li > a:hover {
+  color: #999;
+}
+nav > ul > li > ul {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 6px;
+  max-width: 200px;
+  width: 120px;
+}
+
+nav > ul > li:hover ul {
+  display: block;
+  background-color: white;
+}
+nav > ul > li li a {
+  display: block;
+  padding: 10px 15px;
+}
+nav > ul > li li a:hover {
+  background: #eee;
+}
+nav > ul > li > li + li {
+  margin-top: 5px;
+}
+
+.navMain .title {
+  font-weight: 900;
+}
+
+.nav_dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #39c3bc;
+  margin: 0 5px;
+  cursor: pointer;
+}

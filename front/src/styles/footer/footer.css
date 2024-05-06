@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'NanumSquareR';
+  src: url('../../fonts/NanumSquareOTF_acR.otf');
+}
+
+@font-face {
+  font-family: 'NanumSquareB';
+  src: url('../../fonts/NanumSquareOTF_acB.otf');
+}
+
+.footer {
+  border-top: 1px solid lightgray;
+  background-color: rgba(204, 204, 204, 0.1);
+}
+
+.footer_info {
+  margin-left: 300px;
+  margin-right: 300px;
+  height: 100px;
+}
+
+.footer_info ul {
+  color: gray;
+  display: flex;
+  list-style: none;
+}
+
+.footer_info ul a {
+  font-family: 'NanumSquareR';
+  color: gray;
+  display: flex;
+  list-style: none;
+}
+
+.footer_info_main a:hover {
+  cursor: pointer;
+  font-family: 'NanumSquareB';
+  color: black;
+}
+
+.footer_info ul li {
+  margin-right: 20px;
+}
+
+.footer_info_main {
+  font-family: 'NanumSquareR';
+  font-size: 14px;
+}
+
+.footer_info_sub2 {
+  font-family: 'NanumSquareR';
+  font-size: 12px;
+}
+
+.footer_info_main li:hover {
+  cursor: pointer;
+  font-family: 'NanumSquareB';
+  color: black;
+}
+
+.footer_info_main {
+  margin-top: 20px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.footer_info_sub {
+  margin-top: 20px;
+}
+
+.sns_icon {
+  font-size: 22px;
+}
+
+.sns_icon i {
+  margin-left: 10px;
+}
+
+.sns_icon i:hover {
+  cursor: pointer;
+}

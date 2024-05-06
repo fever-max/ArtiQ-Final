@@ -1,0 +1,210 @@
+.MyMember_div {
+  font-family: 'NanumSquareR';
+  padding: 15px;
+}
+
+.MyMember_title {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.MyMember_hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  height: 3px;
+  background-color: black;
+}
+
+.MyMember_sub_title {
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.MyMember_sub {
+  padding: 10px;
+}
+
+/* 마이 멤버쉽 */
+.MyMember_MyMemberShip {
+  padding: 20px;
+  width: 80%;
+  background-color: #222222;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.MyMember_MyMemberShip1 {
+  display: flex;
+  color: white;
+  justify-content: center;
+}
+
+.MyMember_MyMemberShip1_sub1 {
+  text-align: center;
+}
+
+.MyMember_MyMemberShip2 {
+  color: gray;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.MyMember_MyMemberShip1_sub2 {
+  text-align: center;
+}
+
+.MyMember_MyMemberShip_line {
+  border-left: 1px solid #f0f0f0;
+  height: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.MyMember_MyMemberShip1_sub_title {
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.MyMember_MyMemberShip1_sub_LV {
+  margin-top: 5px;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.MyMember_MyMemberShip1_sub_LV2 {
+  margin-top: 5px;
+  font-size: 25px;
+  font-weight: 900;
+  color: #39c3bc;
+}
+
+/* 레벨링  */
+
+.MyMember_LVs {
+  width: 80%;
+  height: 200px;
+  display: flex;
+  align-items: end;
+}
+
+.MyMember_LV1 {
+  width: 20%;
+  height: 30%;
+  background-color: #c4c5ca;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.MyMember_LV2 {
+  width: 20%;
+  height: 40%;
+  background-color: #a3a7ae;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.MyMember_LV3 {
+  width: 20%;
+  height: 60%;
+  background-color: #888d96;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.MyMember_LV4 {
+  width: 20%;
+  height: 80%;
+  background-color: #737882;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.MyMember_LV5 {
+  width: 20%;
+  height: 100%;
+  background-color: #646a76;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.MyMember_LV_title {
+  margin-top: 5px;
+  color: white;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.MyMember_LV_sub {
+  margin-top: 5px;
+  color: white;
+  font-size: 17px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+/* 멤버쉽 설명 */
+.MyMember_LV_info {
+  margin-top: 30px;
+}
+
+.MyMember_LV_info_sub {
+  display: flex;
+  width: 80%;
+  height: 80px;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 20px;
+}
+
+.MyMember_LV_info_sub1 {
+  width: 40%;
+}
+
+.MyMember_LV_info_sub_LV {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.MyMember_LV_info_sub_LV2 {
+  font-size: 13px;
+  color: #39c3bc;
+}
+
+.MyMember_LV_info_money {
+  margin-bottom: 10px;
+}
+
+.MyMember_LV_info_money_title {
+  font-size: 13px;
+  color: gray;
+}
+
+.MyMember_LV_info_money_sub {
+  font-weight: 900;
+  margin-top: 3px;
+  font-size: 15px;
+}
+
+/* 구매 수수료 */
+
+.MyMember_sub_charge {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 30px;
+}
+
+.MyMember_sub_charge_info {
+  margin-bottom: 10px;
+}

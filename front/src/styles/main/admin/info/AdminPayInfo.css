@@ -1,0 +1,79 @@
+.AdminPayInfo_div {
+  font-family: 'NanumSquareR';
+  padding: 15px;
+}
+
+.AdminPayInfo_title {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.AdminPayInfo_pay {
+  padding: 20px;
+  display: flex;
+  margin-top: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.AdminPayInfo_hr {
+  border: none;
+  height: 3px;
+  background-color: black;
+}
+
+.AdminPayInfo_table_name {
+  display: flex;
+  padding: 10px;
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.AdminPayInfo_table_name1 {
+  width: 20%;
+}
+.AdminPayInfo_table_name2 {
+  width: 15%;
+}
+.AdminPayInfo_table_name3 {
+  width: 20%;
+}
+
+.AdminPayInfo_table_name4 {
+  width: 10%;
+}
+.AdminPayInfo_table_name5 {
+  width: 25%;
+}
+.AdminPayInfo_table_name6 {
+  width: 10%;
+}
+
+.AdminPayInfo_table_sub {
+  font-size: 14px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid gainsboro;
+}
+
+.AdminPayInfo_table_btn {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  width: 80%;
+  text-align: center;
+  font-size: 13px;
+}
+
+.AdminPayInfo_table_btn:hover {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  width: 80%;
+  text-align: center;
+  font-size: 13px;
+}

@@ -1,0 +1,18 @@
+.header {
+  margin-top: 30px;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 20px;
+  /*   display: flex;
+  justify-content: center;
+  align-items: center ; */
+}
+
+.pix {
+  position: sticky;
+  top: 0px; /* 도달했을때 고정시킬 위치 */
+  background-color: white;
+  z-index: 10;
+  border-bottom: 1px solid lightgray;
+  padding: 3px;
+}

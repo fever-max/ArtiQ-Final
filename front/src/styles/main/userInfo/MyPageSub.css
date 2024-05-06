@@ -1,0 +1,233 @@
+.MyPageSub_div {
+  font-family: 'NanumSquareR';
+  padding: 30px;
+}
+
+.MyPageSub_userInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.MyPageSub_userInfo1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MyPageSub_userInfoId1 {
+  font-weight: 900;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.MyPageSub_userInfoId2 {
+  font-size: 13px;
+}
+
+.MyPageSub_userInfo_img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.MyPageSub_userInfoBtn {
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.MyPageSub_userDetail {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.MyPageSub_userDetail img {
+  width: 30px;
+}
+
+.MyPageSub_userDetail div {
+  text-align: center;
+}
+
+.MyPageSub_userDetail div div {
+  font-size: 12px;
+}
+
+.MyPageSub_userPurchase {
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.MyPageSub_userCommission {
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.MyPageSub_userLike {
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.MyPageSub_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.MyPageSub_title > div:nth-child(2) {
+  font-size: 13px; /* 폰트 크기 15px로 설정 */
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.MyPageSub_title_sub {
+  cursor: pointer;
+}
+
+.MyPageSub_userDetail div {
+  cursor: pointer;
+}
+
+/* 구매내역 */
+.MyPageSub_auction_table_txt {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.MyPageSub_auction_table_txt1 {
+  width: 25%;
+}
+
+.MyPageSub_auction_table_txt2 {
+  width: 30%;
+}
+.MyPageSub_auction_table_txt3 {
+  width: 25%;
+}
+
+.MyPageSub_auction_table_txt4 {
+  width: 20%;
+}
+
+.MyPageSub_auction_table_sub {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid gainsboro;
+}
+
+.MyPageSub_auction_table_txt1 img {
+  width: 65%;
+  height: 100px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.MyPageSub_auction_table_txt2_sub {
+  display: flex;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.MyPageSub_auction_table_txt2_sub div {
+  margin-right: 10px;
+}
+
+.MyPageSub_auction_table_txt2_sub2 {
+  font-size: 15px;
+  color: gray;
+}
+
+.MyPageSub_noDataMessage {
+  padding: 30px;
+  padding-top: 40px;
+  text-align: center;
+  color: gray;
+}
+
+/* 감정 신청내역 */
+.MyPageSub_commission_table_txt {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.MyPageSub_commission_table_txt1 {
+  width: 25%;
+}
+
+.MyPageSub_commission_table_txt2 {
+  width: 30%;
+}
+.MyPageSub_commission_table_txt3 {
+  width: 25%;
+}
+
+.MyPageSub_commission_table_txt4 {
+  width: 20%;
+}
+
+.MyPageSub_commission_table_sub {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid gainsboro;
+}
+
+.MyPageSub_commission_table_txt1 img {
+  width: 65%;
+}
+
+.MyPageSub_commission_table_txt2_sub {
+  display: flex;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.MyPageSub_commission_table_txt2_sub div {
+  margin-right: 10px;
+}
+
+.MyPageSub_commission_table_txt2_sub2 {
+  font-size: 15px;
+  color: gray;
+}
+
+.MyPageSub_commission_table_sub:hover {
+  cursor: pointer;
+  background-color: #f4f4f4;
+}
+
+.MyPageSub_auction_table_sub:hover {
+  cursor: pointer;
+  background-color: #f4f4f4;
+}

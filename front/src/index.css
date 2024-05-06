@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'NanumSquareR';
+  src: url('../src/fonts/NanumSquareOTF_acEB.otf');
+}
+
+body {
+  margin: 0;
+  font-family: NanumSquareR;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

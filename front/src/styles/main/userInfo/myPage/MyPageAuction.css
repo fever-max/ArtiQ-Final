@@ -1,0 +1,90 @@
+.MyPageAuction_div {
+  font-family: 'NanumSquareR';
+  padding: 15px;
+}
+
+.MyPageAuction_title {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.MyExpert_sub {
+}
+
+.MyPageAuction_hr {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  border: none;
+  height: 3px;
+  background-color: black;
+}
+/* 신청 테이블 */
+.MyPageAuction_table_column {
+  font-size: 14px;
+  font-weight: 900;
+  display: flex;
+  padding: 5px;
+  border-bottom: 3px solid black;
+  padding-bottom: 10px;
+}
+
+.MyPageAuction_table_column1 {
+  width: 25%;
+}
+
+.MyPageAuction_table_column2 {
+  width: 15%;
+}
+.MyPageAuction_table_column3 {
+  width: 15%;
+}
+.MyPageAuction_table_column4 {
+  width: 15%;
+}
+.MyPageAuction_table_column5 {
+  width: 20%;
+}
+
+.MyPageAuction_table_column6 {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.MyPageAuction_table_row {
+  font-size: 15px;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.MyPageAuction_table_column1_sub {
+  width: 25%;
+}
+
+.MyPageAuction_table_column2_sub {
+  width: 15%;
+  padding-left: 18px;
+}
+.MyPageAuction_table_column3_sub {
+  width: 15%;
+  padding-left: 4px;
+}
+.MyPageAuction_table_column4_sub {
+  width: 15%;
+  padding-right: 20px;
+  font-weight: bold;
+}
+.MyPageAuction_table_column5_sub {
+  width: 20%;
+}
+.MyPageAuction_table_column6_sub {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.MyPageAuction_table_column1_sub img {
+  width: 90%;
+}

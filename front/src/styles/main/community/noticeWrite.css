@@ -1,0 +1,77 @@
+.notice_write_div {
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 850px;
+}
+
+.noticeboard_write_heder_line {
+  height: 37px;
+  padding-top: 1%;
+  border-bottom: 2px solid black;
+}
+
+.noticeboard_write_heder {
+  margin-top: -1%;
+  font-size: 24px;
+  font-family: 'Nanum Gothic', sans-serif;
+  letter-spacing: -1px;
+}
+
+.notice_write_title_line {
+  clear: both;
+  display: inline-block;
+  margin-left: 3%;
+  margin-top: 1%;
+}
+
+.notice_write_title {
+  width: 100%;
+  border: 1px solid #ebebeb;
+  padding: 0 3%;
+}
+
+.notice_write_title::placeholder {
+  font-weight: normal;
+}
+
+.notice_write_info {
+  margin-top: 1%;
+  font-size: 12px;
+  color: #666;
+}
+
+.notice_write_content_line {
+  margin-top: 3%;
+}
+
+.notice_write_content {
+  resize: none;
+  border-top: 2px solid black;
+  height: 400px;
+  margin-left: 3%;
+  width: 95%;
+  padding: 1%;
+  white-space: pre-wrap; /* 줄 바꿈 유지 */
+}
+
+.notice_write_content::placeholder {
+  font-weight: normal;
+}
+
+.notice_write_btn_line {
+  margin-top: 1%;
+  float: right;
+  margin-right: 1%;
+}
+
+.notice_write_btn {
+  background-color: black;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+}

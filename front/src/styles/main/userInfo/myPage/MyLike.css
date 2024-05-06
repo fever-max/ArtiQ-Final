@@ -1,0 +1,20 @@
+.MyLike_div {
+  font-family: 'NanumSquareR';
+  padding: 15px;
+}
+
+.MyLike_title {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.MyLike_sub {
+}
+
+.MyLike_hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  height: 3px;
+  background-color: black;
+}

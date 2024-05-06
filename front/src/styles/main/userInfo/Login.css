@@ -1,0 +1,116 @@
+.loginDiv {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+}
+
+.loginDiv_main {
+  margin: 20px;
+  width: 400px;
+}
+
+input {
+  font-family: 'NanumSquareR';
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ebebeb;
+  outline: none;
+  height: 40px;
+}
+
+.login_title {
+  font-family: 'NanumSquareR';
+  font-weight: 900;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.login_btn {
+  font-size: 15px;
+  font-weight: 900;
+  height: 50px;
+  background-color: #ccc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.login_btn.active {
+  font-size: 15px;
+  font-weight: 900;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.login_sns {
+  font-family: 'NanumSquareR';
+  margin-top: 20px;
+  height: 50px;
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login_sns h3 {
+  margin-left: 5px;
+}
+
+.loginDiv_main a {
+  color: black;
+  text-decoration: none;
+}
+
+.login_join {
+  display: flex;
+  justify-content: space-around;
+  font-size: 13px;
+}
+
+.loginDiv_main form div h3 {
+  margin-top: 10px;
+  font-weight: 900;
+  font-size: 13px;
+}
+
+.login_join div {
+  margin-top: 5px;
+  font-family: 'NanumSquareR';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+}
+
+.msg {
+  font-family: 'NanumSquareR';
+  font-size: 12px;
+  color: red;
+}
+
+.login_join a h3 {
+  font-family: 'NanumSquareR';
+  font-size: 13px;
+}

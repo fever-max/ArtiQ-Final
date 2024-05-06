@@ -1,0 +1,239 @@
+.art-detail-container {
+  display: flex;
+  max-width: 1500px;
+  margin: 0 auto;
+  background: #fff;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  margin-top: 10px;
+}
+
+.art-image {
+  margin-left: 100px;
+  width: 600px;
+  height: 350px;
+  margin-top: 20px;
+  border-radius: 10px; /* 경계선 둥글게 */
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.art-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.art-info {
+  font-family: 'NanumSquareR';
+  padding: 20px;
+  padding-left: 50px;
+  width: 30%;
+  box-sizing: border-box;
+  margin-left: 50px;
+  border-left: 1px solid #e7e7e7;
+  margin-top: 20px;
+}
+
+.art-info-title {
+  color: gray;
+  font-size: 14px;
+}
+
+.art-info-title-money {
+  margin-top: 5px;
+  font-size: 25px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.art-info-Detail-name {
+  font-size: 25px;
+}
+
+.art-info-Detail-sub1 {
+  margin-top: 5px;
+  color: gray;
+  font-size: 14px;
+}
+
+.art-info-Detail-sub2 {
+  height: 30px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.art-info-Detail-sub-sub {
+  width: 30%;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.art-info-Detail-sub-sub-name {
+  color: gray;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.vertical-line2 {
+  width: 1px;
+  height: 100%;
+  background-color: gray;
+}
+
+.art-info-Detail-bitCount {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.image-info {
+  padding: 12px 15px; /* 내부 패딩 조정 */
+  background-color: #ffffff; /* 배경색 변경 */
+  border-top: none; /* 상단 경계선 제거 */
+  text-align: center;
+}
+
+.image-infooo h1 {
+  padding: 20px;
+  width: 30%;
+  box-sizing: border-box;
+  font-weight: bold; /* 폰트 굵기를 더욱 강조 */
+  font-size: 20px; /* 조금 더 섬세하게 조정 */
+  color: #333; /* 진한 회색으로 제목 색상 설정 */
+}
+
+.price-action {
+  display: flex;
+  flex-direction: column; /* 버튼들을 세로로 나열 */
+}
+
+.price {
+  font-size: 1.5rem;
+  color: #e44d26;
+  margin-bottom: 10px;
+}
+
+.btn {
+  font-family: 'NanumSquareR';
+  padding: 12px 20px;
+  margin-top: 15px;
+  border-radius: 5px; /* 버튼 모서리 둥글게 */
+  font-size: 16px; /* 글꼴 크기 조정 */
+  font-weight: 500; /* 글꼴 무게 조정 */
+}
+
+.btn:hover {
+  background-color: #666;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.btn:last-child {
+  margin-bottom: 0;
+}
+
+.btn {
+  display: block;
+  padding: 10px 10px;
+  margin-top: 10px;
+  border: none;
+  background-color: #333; /* 기존 배경색 */
+  color: white; /* 글자색을 흰색으로 설정 */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-btn {
+  background-color: #008cba;
+  color: white; /* 여기도 글자색을 흰색으로 설정 */
+}
+
+.buy-btn {
+  background-color: #ef6253;
+  color: white; /* 여기도 글자색을 흰색으로 설정 */
+}
+
+.consult-btn {
+  background-color: #41b979;
+  color: white; /* 컨설팅 버튼도 글자색을 흰색으로 변경 */
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+.loading {
+  text-align: center;
+  padding: 50px 0;
+}
+.test {
+  border-bottom: 2px solid #ccc; /* #ccc는 그레이 색상입니다. 색상은 원하는 대로 변경 가능합니다. */
+  padding-bottom: 10px; /* 텍스트와 선 사이의 간격을 줍니다. */
+  margin-bottom: 20px; /* 선 아래의 요소와의 간격을 줍니다. */
+  border-top: 2px solid #ccc; /* #ccc는 그레이 색상입니다. 색상은 원하는 대로 변경 가능합니다. */
+  margin-top: 10px;
+}
+
+/* 경매 상태 변화  */
+.auction-status-s {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin-top: 20px;
+  margin-right: 50px;
+  color: #fff; /* 텍스트 색상을 흰색으로 */
+  padding: 12px 12px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  z-index: 1; /* 상위에 표시되도록 z-index 설정 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 상자 그림자 효과 */
+  font-weight: bold; /* 글자를 굵게 */
+  text-transform: uppercase; /* 대문자로 텍스트 변환 */
+  text-align: center;
+}
+
+/* 경매 상태에 따른 배경색 설정 */
+.auction-waiting {
+  background-color: #f0ad4e;
+} /* 대기중 - 주황색 */
+.auction-active {
+  background-color: #5cb85c;
+} /* 진행중 - 녹색 */
+.auction-ended {
+  background-color: #d9534f;
+} /* 종료됨 - 빨간색 */
+
+.horizontal-line {
+  border-bottom: 1px solid #000; /* 선의 두께와 색상을 조절할 수 있어요 */
+  margin-top: 10px;
+}
+
+.art-info-title {
+  margin: 0;
+  padding: 0;
+}
+
+.art-infoo {
+  font-family: 'NanumSquareR';
+  padding: 20px;
+  margin: 20px;
+}
+
+.art-infoo-title {
+  padding-top: 30px;
+  font-weight: 900;
+  font-size: 20px;
+  margin-left: 65px;
+  margin-right: 65px;
+  border-top: 1px solid gainsboro;
+}
+
+.art-infoo-sub {
+  padding: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  line-height: 30px;
+}

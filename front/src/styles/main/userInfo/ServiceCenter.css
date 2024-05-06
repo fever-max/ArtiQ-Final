@@ -1,0 +1,83 @@
+.ServiceCenter_div {
+  font-family: 'NanumSquareR';
+  padding: 20px;
+}
+
+.ServiceCenter_title {
+  font-size: 25px;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Q&A */
+
+.ServiceCenter_qna_content {
+  padding: 20px;
+}
+.ServiceCenter_qna_q {
+  font-size: 20px;
+  font-weight: 900;
+  padding: 20px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  border-bottom: 1px solid gainsboro;
+  cursor: pointer;
+}
+
+.ServiceCenter_qna_q_sub {
+  display: flex;
+
+  align-items: end;
+}
+
+.ServiceCenter_qna_q1 {
+  margin-right: 5px;
+  font-size: 35px;
+}
+
+.ServiceCenter_qna_a {
+  display: none; /* 기본적으로 숨겨진 상태 */
+}
+
+.ServiceCenter_qna_a.visible {
+  display: block; /* 보여지는 상태 */
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 5px;
+}
+
+.ServiceCenter_qna_a.visible p {
+  margin-bottom: 10px;
+}
+
+.ServiceCenter_qna_a.hidden {
+  display: none; /* 숨겨진 상태 */
+}
+
+.ServiceCenter_search {
+  width: 100%;
+  font-size: 15px;
+  padding: 20px;
+  margin-top: 10px;
+  background-color: #fafafa;
+  border-radius: 5px;
+}
+
+.ServiceCenter_search_div {
+  padding: 20px;
+}
+
+.ServiceCenter_categories {
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.ServiceCenter_categories div {
+  margin-right: 20px;
+}

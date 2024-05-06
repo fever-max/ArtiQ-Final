@@ -1,0 +1,56 @@
+.commissionComplete_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+  }
+  
+  .commissionComplete_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 수직 가운데 정렬 */
+    text-align: center; /* 내부 텍스트 정렬을 위해 추가 */
+    margin: 20px;
+    width: 400px;
+  }
+  
+  .commissionComplete_title {
+    font-family: 'NanumSquareR';
+    font-weight: 900;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+  }
+  
+  .commissionComplete_sub {
+    font-family: 'NanumSquareR';
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .commissionComplete_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 900;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 50%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .commissionComplete_hr {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  

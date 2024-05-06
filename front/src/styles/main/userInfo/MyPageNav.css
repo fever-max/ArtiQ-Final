@@ -1,0 +1,40 @@
+.MyPageNav_div {
+  padding: 30px;
+  height: 700px;
+}
+
+.MyPageNav_title {
+  cursor: pointer;
+  font-family: 'NanumSquareR';
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+.MyPageNav_title_sub {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.MyPageNav_div1 {
+  font-family: 'NanumSquareR';
+  margin-bottom: 30px;
+}
+
+.MyPageNav_div1 div {
+  margin-bottom: 20px;
+}
+
+.MyPageNav_div2 {
+  font-family: 'NanumSquareR';
+  margin-bottom: 30px;
+}
+
+.MyPageNav_div2 div {
+  font-family: 'NanumSquareR';
+  margin-bottom: 20px;
+}
+
+.MyPageNav_div1 div:hover {
+  cursor: pointer;
+}

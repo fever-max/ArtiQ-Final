@@ -1,0 +1,116 @@
+.MyPageUserInfo_div {
+  font-family: 'NanumSquareR';
+  padding: 15px;
+}
+
+.MyPageUserInfo_title {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.MyPageUserInfo_sub {
+  height: 800px;
+}
+
+.MyPageUserInfo_hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  height: 3px;
+  background-color: black;
+}
+
+.MyPageUserInfo_title_sub {
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.MyPageUserInfo_sub1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.MyPageUserInfo_img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.MyPageUserInfo_img_sub_box {
+  margin-left: 20px;
+}
+
+.MyPageUserInfo_img_sub {
+  display: flex;
+}
+
+.MyPageUserInfo_img_nickname {
+  font-weight: 900;
+}
+
+.MyPageUserInfo_img_btn {
+  cursor: pointer;
+  border-radius: 7px;
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  font-size: 13px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+/* 로그인 정보 */
+
+.MyPageUserInfo_sub2 {
+  margin-bottom: 20px;
+}
+
+.MyPageUserInfo_input_title {
+  font-size: 13px;
+  color: gray;
+}
+
+.MyPageUserInfo_input {
+  height: 30px;
+  width: 50%;
+}
+
+.MyPageUserInfo_input_box {
+  margin-top: 30px;
+}
+
+.MyPageUserInfo_input_main {
+  display: flex;
+  align-items: baseline;
+}
+
+.MyPageUserInfo_input_change {
+  margin-left: 10px;
+  width: 50px;
+  text-align: center;
+  font-size: 13px;
+  padding: 5px;
+  border-radius: 7px;
+  border: 1px solid #e0e0e0;
+}
+
+/* 개인 정보 */
+.MyPageUserInfo_sub3 {
+  height: 30%;
+}
+
+.MyPageUserInfo_input_addr1 {
+  width: 100px;
+}
+
+.MyPageUserInfo_input_addr2 {
+  width: 200px;
+}
+
+.MyPageUserInfo_input_addr3 {
+  width: 100px;
+}
+
+.MyPageUserInfo_input_change {
+  cursor: pointer;
+}

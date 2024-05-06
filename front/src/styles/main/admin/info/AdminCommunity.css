@@ -1,0 +1,99 @@
+.AdminCommunity_div {
+  font-family: 'NanumSquareR';
+  padding: 15px;
+}
+
+.AdminCommunity_title {
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.AdminCommunity_sub {
+  border: 1px solid #e0e0e0;
+}
+
+.AdminCommunity_hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  height: 3px;
+  background-color: black;
+}
+
+.AdminCommunity_table_column {
+  display: flex;
+  font-weight: 900;
+  font-size: 14px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.AdminCommunity_table_column1 {
+  width: 20%;
+}
+
+.AdminCommunity_table_column2 {
+  width: 30%;
+}
+
+.AdminCommunity_table_column3 {
+  width: 20%;
+}
+
+.AdminCommunity_table_column4 {
+  width: 20%;
+}
+
+.AdminCommunity_table_column5 {
+  width: 10%;
+}
+
+.AdminCommunity_table_column_sub {
+  display: flex;
+  border-bottom: 1px solid gainsboro;
+  padding: 10px;
+  font-size: 14px;
+  align-items: center;
+}
+
+.AdminCommunity_table_column_sub:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+}
+
+.AdminCommunity_table_btn {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  font-size: 13px;
+  width: 50%;
+}
+
+.AdminCommunity_table_btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.AdminCommunity_table_column_txt {
+  font-family: 'NanumSquareR';
+}
+
+.AdminCommunity_title_sub {
+  font-size: 13px;
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.AdminCommunity_content {
+  height: 200px;
+  padding: 20px;
+}
+
+.AdminCommunity_content1 {
+  color: gray;
+  margin-bottom: 20px;
+  font-size: 14px;
+}

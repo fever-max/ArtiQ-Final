@@ -1,0 +1,168 @@
+.free_detail_div {
+  font-family: 'NanumSquareR';
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-bottom: 35%;
+}
+
+.free_detail_main {
+  border-bottom: 2px solid black;
+}
+
+.free_detail_heder_line {
+  padding-top: 1%;
+  border-bottom: 2px solid black;
+}
+
+.free_detail_heder {
+  font-family: 'NanumSquareR';
+  font-weight: 900;
+  font-size: 24px;
+  letter-spacing: -1px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.detail_list_all {
+  width: 100%;
+  font-size: 15px;
+}
+
+.free_detail_list_header {
+  margin: 1% 0 2%;
+  padding-bottom: 3%;
+  border-bottom: 1px solid rgb(185, 185, 185);
+}
+
+.free_detail_title {
+  margin-bottom: 1%;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.free_detail_title_bottom {
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+.free_detail_fl {
+  float: left;
+}
+
+.free_detail_fr {
+  float: right;
+}
+
+.free_detail_vote_line {
+  padding-top: 3%;
+}
+
+.free_detail_vote_button_all {
+  margin: auto;
+  width: 18%;
+  height: 86px;
+  cursor: pointer;
+  position: relative;
+}
+
+.free_detail_upvote {
+  width: 35%;
+  height: 84px;
+  border: 1px solid #ddd;
+  float: left;
+  margin: 0 1%;
+  background: #fff;
+}
+
+.free_detail_downvote {
+  width: 35%;
+  height: 84px;
+  border: 1px solid #ddd;
+  float: left;
+  margin: 0 1%;
+  background: #fff;
+}
+
+.up_vote_text {
+  text-align: center;
+  margin-top: 25%;
+}
+
+.up_vote_count {
+  text-align: center;
+  color: #39c3bc;
+  margin-top: 15%;
+}
+
+.down_vote_text {
+  text-align: center;
+  margin-top: 25%;
+}
+
+.down_vote_count {
+  text-align: center;
+  color: #ff0055;
+  margin-top: 15%;
+}
+
+.free_detail_comment_count {
+  line-height: 250%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.font_red {
+  color: #ff0055;
+}
+
+.comment_write_all {
+  background: #fafafa;
+}
+
+.free_comment_write {
+  width: 100%;
+  height: 100px;
+  padding: 1%;
+  resize: none;
+}
+
+.free_detail_btn_line {
+  font-family: 'NanumSquareR';
+  float: right;
+  margin-top: 1%;
+}
+
+.free_comment_delete_btn {
+  font-family: 'NanumSquareR';
+  background-color: black;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.free_comment_create_btn {
+  font-family: 'NanumSquareR';
+  background-color: black;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.free_cancel {
+  font-family: 'NanumSquareR';
+  background-color: black;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin-right: 5px;
+}

@@ -1,0 +1,84 @@
+.MyCommission_div {
+  font-family: 'NanumSquareR';
+  padding: 15px;
+}
+
+.MyCommission_title {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.MyCommission_sub {
+}
+
+.MyCommission_hr {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  border: none;
+  height: 3px;
+  background-color: black;
+}
+
+/* 신청 테이블 */
+.MyCommission_table_column {
+  font-size: 14px;
+  font-weight: 900;
+  display: flex;
+  padding: 5px;
+  border-bottom: 3px solid black;
+  padding-bottom: 10px;
+}
+
+.MyCommission_table_column0 {
+  width: 20%;
+}
+.MyCommission_table_column1 {
+  width: 12%;
+}
+
+.MyCommission_table_column2 {
+  width: 9%;
+}
+.MyCommission_table_column3 {
+  width: 9%;
+}
+.MyCommission_table_column4 {
+  width: 30%;
+  word-wrap: break-word;
+}
+.MyCommission_table_column5 {
+  width: 10%;
+}
+.MyCommission_table_column6 {
+  width: 10%;
+  display: flex;
+}
+
+.MyCommission_table_column6 div {
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.MyCommission_table_column6 div:hover {
+  cursor: pointer;
+  padding: 5px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.MyCommission_table_row {
+  font-size: 15px;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.MyCommission_table_column0 img {
+  width: 90%;
+}

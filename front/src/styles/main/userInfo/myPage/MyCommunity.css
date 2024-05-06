@@ -1,0 +1,82 @@
+.MyCommunity_div {
+  font-family: 'NanumSquareR';
+  padding: 15px;
+}
+
+.MyCommunity_title {
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.MyCommunity_hr {
+  border: none;
+  height: 3px;
+  background-color: black;
+}
+
+.MyCommunity_table_column {
+  display: flex;
+  font-weight: 900;
+  font-size: 14px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.MyCommunity_table_column1 {
+  width: 20%;
+}
+
+.MyCommunity_table_column2 {
+  width: 30%;
+}
+
+.MyCommunity_table_column3 {
+  width: 20%;
+}
+
+.MyCommunity_table_column4 {
+  width: 20%;
+}
+
+.MyCommunity_table_column5 {
+  width: 10%;
+}
+
+.MyCommunity_table_column_sub {
+  display: flex;
+  border-bottom: 1px solid gainsboro;
+  padding: 10px;
+  font-size: 14px;
+  align-items: center;
+}
+
+.MyCommunity_table_column_sub:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+}
+
+.MyCommunity_table_btn {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  font-size: 13px;
+  width: 50%;
+}
+
+.MyCommunity_table_btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.MyCommunity_table_column_txt {
+  font-family: 'NanumSquareR';
+}
+
+.MyCommunity_title_sub {
+  font-size: 13px;
+  color: gray;
+  margin-bottom: 15px;
+}

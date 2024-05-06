@@ -1,0 +1,234 @@
+.MyPoint_div {
+  font-family: 'NanumSquareR';
+  padding: 15px;
+}
+
+.MyPoint_title {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.MyPoint_hr {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  border: none;
+  height: 3px;
+  background-color: black;
+}
+
+/* 포인트 정보 */
+.MyPoint_sub {
+  margin-top: 20px;
+  display: flex;
+  border: 1px solid #e0e0e0;
+  background-color: #fafafa;
+  border-radius: 5px;
+  height: 100px;
+  padding: 10px;
+}
+
+.MyPoint_sub_point {
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+
+.MyPoint_sub1 {
+  padding: 10px;
+  border-right: 1px solid #e0e0e0;
+  width: 50%;
+}
+
+.MyPoint_sub2 {
+  margin-left: 30px;
+  padding: 10px;
+  width: 50%;
+}
+
+.MyPoint_sub_point_title {
+  font-size: 13px;
+}
+
+.MyPoint_sub_point_point {
+  margin-top: 5px;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.MyPoint_sub3 {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 10px;
+  width: 60%;
+}
+
+.MyPoint_sub3_btn {
+  cursor: pointer;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: white;
+  background-color: #222222;
+  border-radius: 10px;
+  padding: 15px;
+  height: 60%;
+}
+
+.MyPoint_info {
+  margin-top: 5px;
+  font-size: 13px;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+/* 적립 테이블 */
+.MyPoint_table_name {
+  display: flex;
+  padding: 10px;
+  border-bottom: 2px solid #e0e0e0;
+  font-weight: 900;
+}
+
+.MyPoint_table_name1 {
+  width: 20%;
+}
+
+.MyPoint_table_name2 {
+  width: 25%;
+}
+
+.MyPoint_table_name3 {
+  width: 25%;
+}
+
+.MyPoint_table_name4 {
+  width: 30%;
+}
+
+.MyPoint_table_name_sub {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.MyPoint_table_name1_sub {
+  width: 20%;
+  font-size: 14px;
+}
+
+.MyPoint_table_name2_sub {
+  width: 25%;
+  font-size: 14px;
+}
+
+.MyPoint_table_name3_sub {
+  width: 25%;
+  font-size: 14px;
+}
+
+.MyPoint_table_name4_sub {
+  width: 30%;
+  font-size: 14px;
+}
+
+/* 포인트 충전 모달 */
+.MyPoint_modal {
+  font-family: 'NanumSquareR';
+  padding: 20px;
+  text-align: center;
+}
+
+.MyPoint_modal_title {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.MyPoint_modal_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.MyPoint_modal_content_sub {
+  display: flex;
+}
+
+.MyPoint_modal_money {
+  margin-top: 30px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.MyPoint_modal_content_title {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.MyPoint_modal_content_box {
+  cursor: pointer;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 10px;
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.MyPoint_modal_content_box.selected {
+  border-radius: 5px;
+  background-color: #222222;
+  color: white;
+  padding: 10px;
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.MyPoint_modal_pay {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MyPoint_modal_pay_btn {
+  font-size: 14px;
+  margin-right: 20px;
+  cursor: pointer;
+  background-color: #222222;
+  border-radius: 10px;
+  padding: 15px;
+  color: white;
+  text-align: center;
+  width: 25%;
+}
+
+.MyPoint_modal_pay_btn2 {
+  font-size: 14px;
+  margin-right: 20px;
+  cursor: pointer;
+  background-color: #f7e400;
+  border-radius: 10px;
+  padding: 15px;
+  color: black;
+  text-align: center;
+  width: 25%;
+}
+
+.MyPoint_modal_content_money {
+  margin-top: 5px;
+  font-size: 13px;
+  font-weight: 100;
+}
+
+.MyPoint_modal_close {
+  display: flex;
+  justify-content: right;
+}
+
+.MyPoint_modal_close_btn {
+  cursor: pointer;
+}

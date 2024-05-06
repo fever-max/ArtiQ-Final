@@ -1,0 +1,250 @@
+/* *로 시작하면 전체에 미리 설정값을 주고 시작하는 것
+*{
+    box-sizing: border-box;
+} */
+
+.chat {
+}
+
+.top,
+.middle,
+.bottom {
+  width: 100%; /* 전체 너비를 차지하도록 설정 */
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: hsl(0, 0%, 100%);
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: black;
+  color: black;
+  font-weight: 900;
+  border-color: #ebebeb;
+  padding: 15px;
+}
+
+.wrap {
+  padding: 40px 0;
+  overflow-y: scroll;
+  background-color: #f1f1f1;
+  scroll-behavior: smooth;
+  flex-grow: 1;
+  /* border: 1px solid; */
+}
+
+.wrap::-webkit-scrollbar {
+  width: 5px;
+}
+
+.wrap::-webkit-scrollbar-track {
+  display: none;
+}
+
+.wrap::-webkit-scrollbar-button {
+  display: none;
+}
+
+.wrap .chat {
+  display: flex;
+  align-items: flex-start;
+  padding: 12px;
+}
+
+.wrap .chat .icon {
+  position: relative;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #eee;
+  font-size: 14px;
+}
+
+.chatprofile {
+  width: 50px;
+}
+.chat ch1 {
+  color: white;
+}
+
+.wrap .chat .textbox {
+  color: white;
+  position: relative;
+  display: inline-block;
+  max-width: calc(100% - 70px);
+  padding: 10px;
+  margin-top: 7px;
+  font-size: 13px;
+  border-radius: 10px;
+}
+
+.wrap .chat .textbox::before {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.wrap .ch1 .textbox {
+  max-width: 60%;
+  margin-left: 20px;
+  background-color: #535353;
+}
+
+.wrap .ch1 .textbox::before {
+  left: -10px;
+  top: 10px;
+  content: '◀';
+  color: #535353;
+}
+
+.msgTime {
+  font-size: 11px;
+  color: gray;
+  margin-top: 25px;
+  margin-left: 5px;
+}
+
+/* 내가 보낸 메세지 */
+
+.chat_ch2 {
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.chat_ch2 img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.chat_ch2 .icon {
+  order: 3;
+  margin-left: 10px;
+}
+
+.chat_ch2 .msgTime {
+  order: 1;
+  font-size: 11px;
+  color: gray;
+  margin-top: 25px;
+  margin-right: 10px;
+}
+
+.chat_ch2 .textbox {
+  order: 2;
+  color: white;
+  background-color: #41b979;
+  position: relative;
+  display: inline-block;
+  max-width: 60%;
+  padding: 10px;
+  margin-top: 7px;
+  font-size: 13px;
+  border-radius: 10px;
+}
+
+.chat_ch2 .textbox::after {
+  position: relative;
+  left: 19px;
+  content: '▶';
+  color: #41b979;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  background-color: white;
+  border-top: 1px solid;
+  border-color: #d3cece;
+  color: black;
+  border-bottom: 1px solid #d3cece;
+}
+
+.textarea {
+  border: none;
+  width: 80%;
+  resize: none;
+  height: 50px;
+  margin-left: 15px;
+  background: none;
+  outline: none;
+  color: black;
+}
+
+.buttonChat {
+  background-color: #474747;
+  font-size: 12px;
+  font-weight: 900;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 6px 12px;
+  border: 1px;
+  color: white;
+}
+
+.buttoChat:hover {
+  background-color: #eee;
+  cursor: pointer;
+  /* 변화효과는 transition: all 2s ease-out; */
+}
+
+.option {
+  display: flex;
+  justify-content: space-between;
+}
+
+.emoticon {
+  padding-left: 15px;
+  padding-top: 5px;
+  width: 17px;
+  height: 17px;
+  -webkit-filter: opacity(0.4) drop-shadow(0 0 0 grey);
+  filter: opacity(0.4) drop-shadow(0 0 0 grey);
+  position: absolute;
+}
+
+.emoticon:hover {
+  padding-left: 15px;
+  padding-top: 5px;
+  position: absolute;
+  filter: none;
+}
+
+.file {
+  padding-left: 15px;
+  padding-top: 5px;
+  left: 30px;
+  width: 17px;
+  height: 17px;
+  -webkit-filter: opacity(0.4) drop-shadow(0 0 0 grey);
+  filter: opacity(0.4) drop-shadow(0 0 0 grey);
+  position: absolute;
+  cursor: pointer;
+}
+
+.file:hover {
+  padding-left: 15px;
+  padding-top: 5px;
+  left: 30px;
+  position: absolute;
+  filter: none;
+  cursor: pointer;
+}
+
+.transparent {
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.top-left {
+  display: flex;
+  justify-items: right;
+}

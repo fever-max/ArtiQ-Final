@@ -1,0 +1,41 @@
+/* Pagination styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination li a {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 5px;
+}
+
+.pagination li a:hover,
+.pagination li a:focus {
+  background-color: #f4f4f4;
+  cursor: pointer; /* 마우스 포인터를 손가락 모양으로 변경 */
+}
+
+.pagination .active a {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.pagination .disabled a {
+  color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+.pagination .break a {
+  cursor: default;
+}

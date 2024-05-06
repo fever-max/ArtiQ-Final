@@ -1,0 +1,102 @@
+.MyExpert_div {
+  font-family: 'NanumSquareR';
+  padding: 15px;
+}
+
+.MyExpert_title {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.MyExpert_sub {
+}
+
+.MyExpert_hr {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  border: none;
+  height: 3px;
+  background-color: black;
+}
+
+/* 신청 테이블 */
+.MyExpert_table_column {
+  font-weight: 900;
+  display: flex;
+  padding: 5px;
+  border-bottom: 3px solid black;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.MyExpert_table_column1 {
+  width: 15%;
+}
+
+.MyExpert_table_column2 {
+  width: 10%;
+}
+.MyExpert_table_column3 {
+  width: 15%;
+}
+.MyExpert_table_column4 {
+  width: 30%;
+}
+.MyExpert_table_column5 {
+  width: 15%;
+}
+.MyExpert_table_column6 {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+.MyExpert_table_column1_sub {
+  width: 15%;
+}
+
+.MyExpert_table_column2_sub {
+  width: 10%;
+}
+.MyExpert_table_column3_sub {
+  width: 15%;
+}
+.MyExpert_table_column4_sub {
+  width: 30%;
+  padding-right: 20px;
+}
+.MyExpert_table_column5_sub {
+  width: 15%;
+}
+.MyExpert_table_column6_sub {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+.MyExpert_table_row {
+  font-size: 15px;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.MyExpert_table_btn {
+  width: 80%;
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin-right: 5px;
+  text-align: center;
+}
+
+.MyExpert_table_btn:hover {
+  cursor: pointer;
+  padding: 5px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  margin-right: 5px;
+}

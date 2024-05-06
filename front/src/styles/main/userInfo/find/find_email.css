@@ -1,0 +1,80 @@
+.find_div {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+}
+
+.find_main {
+  margin: 20px;
+  width: 400px;
+}
+
+.find_title {
+  font-family: 'NanumSquareR';
+  font-weight: 900;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.find_sub {
+  font-family: 'NanumSquareR';
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.find_sub div {
+  font-size: 15px;
+}
+
+.find_btn {
+  pointer-events: none;
+  font-size: 15px;
+  font-weight: 900;
+  height: 50px;
+  background-color: #ccc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.find_btn.active {
+  pointer-events: auto;
+  font-size: 15px;
+  font-weight: 900;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.find_hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.find_main form div h3 {
+  margin-top: 10px;
+  font-weight: 900;
+  font-size: 13px;
+}
+
+input::-webkit-inner-spin-button {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}

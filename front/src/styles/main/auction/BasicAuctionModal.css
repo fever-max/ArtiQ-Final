@@ -1,0 +1,79 @@
+/* 모달 오버레이 및 컨텐트 스타일 */
+.ReactModal__Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75); /* 반투명 검은색 배경 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    background: white;
+    border-radius: 8px;
+    padding: 25px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    outline: none;
+}
+
+/* 모달 헤더 스타일 */
+.modal-header {
+    font-size: 24px;
+    color: #333;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+/* 모달 본문 스타일 */
+.modal-body {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 버튼 스타일 */
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.button-close {
+    background-color: #f44336; /* 빨간색 */
+}
+
+.button-close:hover {
+    background-color: #d32f2f;
+}
+
+.button-other {
+    background-color: #2196f3; /* 파란색 */
+}
+
+.button-other:hover {
+    background-color: #1976d2;
+}

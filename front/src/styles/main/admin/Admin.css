@@ -1,0 +1,19 @@
+.adminDiv {
+  display: flex;
+}
+
+.admin_div1 {
+  width: 20%;
+  margin-right: 20px;
+}
+
+.admin_div2 {
+  width: 80%;
+}
+
+.role_msg {
+  padding: 100px;
+  text-align: center;
+  font-weight: 900;
+  color: red;
+}

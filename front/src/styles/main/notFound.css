@@ -1,0 +1,45 @@
+.notFoundDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+.notFound_main {
+  display: flex;
+  flex-direction: column; /* 내부 요소들을 세로로 배치 */
+  text-align: center; /* 텍스트를 가운데 정렬 */
+}
+
+.notFound_msg_title {
+  font-family: 'NanumSquareEB';
+}
+
+.notFound_main > div {
+  margin: 10px; /* 각각의 div 사이의 간격 설정 */
+}
+
+.notFound_msg_sub {
+  font-family: 'NanumSquareR';
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+.notFound_home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notFound_btn {
+  width: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+a {
+  font-family: 'NanumSquareEB';
+  text-decoration: none; /* 밑줄 제거 */
+  color: black;
+}

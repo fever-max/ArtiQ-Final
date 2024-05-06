@@ -1,0 +1,66 @@
+.Guide_div {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.Guide_div img {
+  width: 80%;
+  height: auto;
+  display: block;
+}
+
+.Guide_img {
+  display: flex;
+  justify-content: center;
+  transition: transform 0.5s ease; /* transform에 대한 transition 추가 */
+}
+
+.Guide_div img {
+  width: 80%;
+  height: auto;
+  display: block;
+  transition: width 0.5s ease; /* width에 대한 transition 추가 */
+}
+
+.Guide_div button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5); /* 버튼 배경색 */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.Guide_div button:hover {
+  background-color: rgba(255, 255, 255, 0.7); /* 호버 시 배경색 */
+}
+
+button.prev {
+  left: 10px; /* 왼쪽에 위치 */
+}
+
+button.next {
+  right: 10px; /* 오른쪽에 위치 */
+}
+
+.dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #bbb;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #555;
+}

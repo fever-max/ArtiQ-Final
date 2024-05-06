@@ -1,0 +1,173 @@
+.freeboard_div {
+  font-family: 'NanumSquareR';
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.freeboard_main {
+  border-bottom: 1px solid black;
+}
+
+.freeboard_heder_line {
+  padding-top: 1%;
+  border-bottom: 2px solid black;
+}
+
+.freeboard_heder {
+  font-family: 'NanumSquareR';
+  font-weight: 900;
+  font-size: 24px;
+  letter-spacing: -1px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.freeboard_list_all {
+  width: 100%;
+  font-size: 12px;
+}
+
+.free_col {
+  display: flex;
+  height: 37px;
+  border-bottom: 2px solid black;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 1%;
+}
+
+.free_num_col {
+  width: 7%;
+}
+
+.free_category_col {
+  width: 10%;
+}
+
+.free_title_col {
+  width: 44%;
+}
+
+.free_nickname_col {
+  width: 15%;
+}
+
+.free_create_col {
+  width: 10%;
+}
+
+.free_hit_count_col {
+  width: 7%;
+}
+
+.free_like_col {
+  width: 7%;
+}
+
+.freeboard_btn_line {
+  margin-top: 12px;
+}
+
+.freeboard_writer_btn {
+  float: right;
+}
+
+.writer_btn {
+  font-family: 'NanumSquareR';
+  background-color: black;
+  border: none;
+  padding: 8px 17px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.paging_line {
+  display: flex;
+  margin-top: 37px;
+  justify-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* 위쪽 여백 추가 */
+}
+
+.pagination a {
+  font-family: 'NanumSquareR';
+  padding: 5px 10px; /* 이전, 다음 버튼의 패딩 설정 */
+}
+
+/* 전체 컨테이너 스타일링 */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+/* 드롭다운 스타일링 */
+.dropdown {
+  font-family: 'NanumSquareR';
+  margin-right: 10px;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+/* 검색 입력 필드 스타일링 */
+.search-input {
+  font-family: 'NanumSquareR';
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  width: 300px; /* 필요에 따라 조정 */
+}
+
+/* 검색 버튼 스타일링 */
+.search-button {
+  font-family: 'NanumSquareR';
+  background-color: black;
+  border: none;
+  padding: 11px 20px;
+  margin-left: 10px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin-top: 3px;
+}
+
+/* 검색 버튼에 마우스 오버시 */
+.search-button:hover {
+  background-color: rgb(197, 197, 197);
+}
+
+.visually-hidden {
+  border: none;
+  background: transparent;
+  padding: 0;
+  outline: none;
+}
+
+.board_font {
+  font-family: 'NanumSquareR';
+  display: flex;
+  align-items: center;
+}
+
+.board_count_color {
+  color: #39c3bc;
+  margin-left: 10px;
+  font-weight: 900;
+}

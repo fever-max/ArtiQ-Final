@@ -1,0 +1,48 @@
+.user_info ul {
+  font-size: 14px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* 리스트 요소들을 가로로 배치하기 위해 flex로 설정 */
+  align-items: center;
+}
+
+.user_info ul li {
+  margin-right: 10px; /* 각 리스트 아이템 사이의 간격 설정 */
+  display: flex; /* 각 리스트 아이템을 감싸는 컨테이너를 생성 */
+  align-items: center; /* 내부 요소를 수직 가운데 정렬 */
+}
+
+.user_info ul li:last-child {
+  margin-right: 0; /* 마지막 리스트 아이템의 오른쪽 마진 제거 */
+}
+
+.user_info {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.user_info ul li {
+  transition: color 0.3s;
+}
+
+.user_info ul li:hover {
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+}
+
+.user_info a {
+  text-decoration: none;
+  color: #666; /* 기본 글자색 회색으로 설정 */
+  font-family: 'NanumSquareR';
+}
+
+.user_info ul li a {
+  display: flex;
+  align-items: center;
+}
+
+.user_info h3 {
+  color: #666;
+}
