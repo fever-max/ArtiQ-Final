@@ -96,7 +96,6 @@ function FreeBoardDetail() {
       // 새로운 댓글 객체 생성
       const newCommentObject = {
         boardNumber: boardNumber,
-        commentNumber: comments.length + 1,
         userEmail: userEmail,
         userNickname: userNickname,
         commentContent: newComment,
@@ -221,8 +220,7 @@ function FreeBoardDetail() {
                 <h3 className="free_detail_title">{boardData.boardTitle}</h3>
                 <div className="free_detail_title_bottom">
                   <div className="free_detail_fl">
-                    <span> {boardData.boardNickname}</span>
-                    <span> {boardData.boardDate}</span>
+                    <span> {boardData.userNickname}</span> / <span> {boardData.boardDate}</span>
                   </div>
                   <div className="free_detail_fr">
                     <span> 조회 {boardData.boardViewCount}</span>

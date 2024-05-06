@@ -26,20 +26,19 @@ public class CommentService {
 
     // 새로운 댓글 저장
     public void saveComment(CommentEntity comment) {
+
+        // 댓글 저장
         commentRepository.save(comment);
 
+        // 게시글 엔티티 댓글 갯수+1
         Optional<FreeBoardEntity> optionalEntity = freeBoardRepository.findById((long) comment.getBoardNumber());
-    if (optionalEntity.isPresent()) {
-        FreeBoardEntity entity = optionalEntity.get();
-        entity.setBoardCommentCount(comment.getCommentNumber());
-        // 수정하고자 하는 필드가 기존 값과 다를 경우에만 설정
-        if (entity.getBoardNumber() != comment.getBoardNumber()) {
-            entity.setBoardNumber((long) comment.getBoardNumber());
+        if (optionalEntity.isPresent()) {
+            FreeBoardEntity entity = optionalEntity.get();
+            entity.setBoardCommentCount(entity.getBoardCommentCount() + 1);
+            freeBoardRepository.save(entity);
         }
-        freeBoardRepository.save(entity);
-    }
 
-}
+    }
 
     // 특정 게시글에 대한 댓글 목록 조회
     public List<CommentEntity> findCommentsByBoardNumber(int boardNumber) {
@@ -51,6 +50,6 @@ public class CommentService {
     public void deleteComment(int commentNumber) {
         System.out.println("댓글 삭제 서비스 실행 (댓글 엔티티 삭제)");
         commentRepository.deleteById(commentNumber);
-    } 
-    
+    }
+
 }
