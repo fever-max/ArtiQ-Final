@@ -23,9 +23,9 @@ function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 5000); // 이미지가 3초마다 넘어가도록 설정
-    return () => clearInterval(interval); // 컴포넌트가 unmount될 때 interval을 정리
-  }, [currentImageIndex]); // currentImageIndex가 변경될 때마다 useEffect를 호출하여 setInterval 재설정
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [currentImageIndex]);
 
   const nextSlide = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -39,99 +39,20 @@ function Home() {
     setCurrentImageIndex(index);
   };
 
-  //매일 6시 30분으로 설정
+  // "오늘 9시부터 오늘 6시 30분까지"의 기간을 설정
   const currentDate = new Date();
-  const targetDate = new Date(currentDate);
-  targetDate.setHours(18);
-  targetDate.setMinutes(30);
-  targetDate.setSeconds(0);
+  const startDate = new Date(currentDate);
+  startDate.setHours(9); // 오늘 9시
+  startDate.setMinutes(30); // 오늘 9시 30분
 
+  const endDate = new Date(currentDate);
+  endDate.setHours(18); // 오늘 18시
+  endDate.setMinutes(30); // 오늘 18시 30분
+
+  // 만약 현재 시간이 이미 18시 30분을 지났다면 다음 날로 설정
   if (currentDate.getHours() >= 18 && currentDate.getMinutes() >= 30) {
-    targetDate.setDate(targetDate.getDate() + 1);
+    endDate.setDate(endDate.getDate() + 1);
   }
-
-  // useState 훅을 사용하여 상태를 업데이트합니다.
-  const [endDate] = useState(targetDate);
-  const [time, setTime] = useState({ hours: 0, minutes: 0, seconds: 0 });
-
-  useEffect(() => {
-    fetchAuctionData();
-    fetchExpertData();
-    fetchBoardData();
-    fetchLiveData();
-    fetchApiData();
-  }, []);
-
-  const fetchApiData = async () => {
-    try {
-      const key = process.env.REACT_APP_API_KEY;
-      const response = await axios.get(`http://openapi.seoul.go.kr:8088/${key}/json/SemaPsgudInfoKorInfo/1/500`);
-      if (response.data.SemaPsgudInfoKorInfo.row !== null) {
-        await axios.post('http://localhost:4000/insertData', response.data.SemaPsgudInfoKorInfo.row);
-        //console.log('나실행중');
-      } else {
-        console.log('데이터가 존재하지 않습니다.');
-      }
-    } catch (error) {
-      console.error('Error fetching data:', error);
-    }
-  };
-
-  const fetchAuctionData = async () => {
-    try {
-      const response = await axios.get('http://localhost:4000/basicAuction');
-      setAuctionData(response.data);
-      //console.log('일반 경매 데이터', response.data); // 로그 추가
-    } catch (error) {
-      console.error('전문가 데이터 불러오기 에러', error);
-    }
-  };
-
-  const fetchExpertData = async () => {
-    try {
-      const response = await axios.get('http://localhost:4000/api/data/expertData');
-      setExpertData(response.data);
-      //console.log('expertData: ' + response.expertData);
-    } catch (error) {
-      console.error('전문가 데이터 불러오기 에러:', error);
-    }
-  };
-
-  const fetchBoardData = async () => {
-    try {
-      const response = await axios.get('http://localhost:4000/freeBoard');
-      setBoardData(response.data);
-      //console.log('board 데이터' + response.data);
-    } catch (error) {
-      console.error('게시판 데이터 불러오기 에러:', error);
-    }
-  };
-
-  const fetchLiveData = async () => {
-    try {
-      const response = await axios.get('http://localhost:4000/liveAuction/getData');
-      setLiveArtData(response.data);
-      //console.log('라이브데이터' + response.data.liveAuctionInfo);
-      //console.log('라이브데이터' + liveArtData);
-    } catch (error) {
-      setLiveArtData('');
-      console.error('데이터를 불러오는데 실패했습니다:', error);
-    }
-  };
-
-  const handleNext = () => {
-    const newStartIndex = Math.min(startIndex + itemsPerPage, auctionData.artData.length - itemsPerPage);
-    setStartIndex(newStartIndex);
-  };
-
-  const handlePrevious = () => {
-    const newStartIndex = Math.max(startIndex - itemsPerPage, 0);
-    setStartIndex(newStartIndex);
-  };
-
-  const currentPageData = auctionData.artData.slice(startIndex, startIndex + itemsPerPage);
-
-  const startDate = new Date(endDate.getTime() - 33 * 60 * 60 * 1000);
 
   // Date 객체를 포맷팅하여 문자열로 반환하는 함수
   function formatDate(date) {
@@ -158,6 +79,8 @@ function Home() {
     return { hours, minutes, seconds };
   }
 
+  const [time, setTime] = useState(calculateRemainingTime());
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setTime(calculateRemainingTime());
@@ -165,6 +88,77 @@ function Home() {
 
     return () => clearTimeout(timer);
   }, [time]);
+
+  useEffect(() => {
+    fetchAuctionData();
+    fetchExpertData();
+    fetchBoardData();
+    fetchLiveData();
+    fetchApiData();
+  }, []);
+
+  const fetchApiData = async () => {
+    try {
+      const key = process.env.REACT_APP_API_KEY;
+      const response = await axios.get(`http://openapi.seoul.go.kr:8088/${key}/json/SemaPsgudInfoKorInfo/1/500`);
+      if (response.data.SemaPsgudInfoKorInfo.row !== null) {
+        await axios.post('http://localhost:4000/insertData', response.data.SemaPsgudInfoKorInfo.row);
+      } else {
+        console.log('데이터가 존재하지 않습니다.');
+      }
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
+
+  const fetchAuctionData = async () => {
+    try {
+      const response = await axios.get('http://localhost:4000/basicAuction');
+      setAuctionData(response.data);
+    } catch (error) {
+      console.error('전문가 데이터 불러오기 에러', error);
+    }
+  };
+
+  const fetchExpertData = async () => {
+    try {
+      const response = await axios.get('http://localhost:4000/api/data/expertData');
+      setExpertData(response.data);
+    } catch (error) {
+      console.error('전문가 데이터 불러오기 에러:', error);
+    }
+  };
+
+  const fetchBoardData = async () => {
+    try {
+      const response = await axios.get('http://localhost:4000/freeBoard');
+      setBoardData(response.data);
+    } catch (error) {
+      console.error('게시판 데이터 불러오기 에러:', error);
+    }
+  };
+
+  const fetchLiveData = async () => {
+    try {
+      const response = await axios.get('http://localhost:4000/liveAuction/getData');
+      setLiveArtData(response.data);
+    } catch (error) {
+      setLiveArtData('');
+      console.error('데이터를 불러오는데 실패했습니다:', error);
+    }
+  };
+
+  const handleNext = () => {
+    const newStartIndex = Math.min(startIndex + itemsPerPage, auctionData.artData.length - itemsPerPage);
+    setStartIndex(newStartIndex);
+  };
+
+  const handlePrevious = () => {
+    const newStartIndex = Math.max(startIndex - itemsPerPage, 0);
+    setStartIndex(newStartIndex);
+  };
+
+  const currentPageData = auctionData.artData.slice(startIndex, startIndex + itemsPerPage);
 
   return (
     <div className="home_div">

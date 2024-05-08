@@ -19,7 +19,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "notice")
 public class NoticeEntity {
-    //공지사항 테이블
+    // 공지사항 테이블
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -29,7 +29,7 @@ public class NoticeEntity {
     @Column(name = "notice_title")
     private String noticeTitle;
 
-    @Column(name = "notice_content")
+    @Column(length = 5000, name = "notice_content")
     private String noticeContent;
 
     @Column(name = "notice_date")

@@ -1,12 +1,12 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
-import { Link, useHistory } from "react-router-dom";
-import "../../../styles/main/community/noticeWrite.css";
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import { Link, useHistory } from 'react-router-dom';
+import '../../../styles/main/community/noticeWrite.css';
 
 function NoticeBoardWrite() {
   const [userInfo, setUserInfo] = useState(null);
-  const [title, setTitle] = useState("");
-  const [content, setContent] = useState("");
+  const [title, setTitle] = useState('');
+  const [content, setContent] = useState('');
   const [noticeViewCount, setNoticeViewCount] = useState(0);
   const [noticeNumber, setNoticeNumber] = useState(1);
   const history = useHistory();
@@ -14,7 +14,7 @@ function NoticeBoardWrite() {
 
   useEffect(() => {
     if (scrollToTop) {
-      window.scrollTo({ top: 0, behavior: "auto" }); // 페이지 맨 위로 스크롤
+      window.scrollTo({ top: 0, behavior: 'auto' }); // 페이지 맨 위로 스크롤
       setScrollToTop(false);
     }
   }, [scrollToTop]);
@@ -25,10 +25,10 @@ function NoticeBoardWrite() {
 
   const fetchUserInfo = async () => {
     try {
-      const response = await axios.get("http://localhost:4000/freeBoard/getEmail", { withCredentials: true });
+      const response = await axios.get('http://localhost:4000/freeBoard/getEmail', { withCredentials: true });
       setUserInfo(response.data);
     } catch (error) {
-      console.error("사용자 정보를 가져오는 데 실패했습니다:", error);
+      console.error('사용자 정보를 가져오는 데 실패했습니다:', error);
     }
   };
 
@@ -45,16 +45,17 @@ function NoticeBoardWrite() {
     e.preventDefault();
 
     if (!title.trim()) {
-      alert("제목을 입력해주세요.");
+      alert('제목을 입력해주세요.');
       return;
     }
     if (!content.trim()) {
-      alert("내용을 입력해주세요.");
+      alert('내용을 입력해주세요.');
       return;
     }
+    console.log('넘기는 내용: ' + content);
     try {
       await axios.post(
-        "http://localhost:4000/noticeBoard/write",
+        'http://localhost:4000/noticeBoard/write',
         {
           noticeNumber: noticeNumber,
           noticeTitle: title,
@@ -66,18 +67,18 @@ function NoticeBoardWrite() {
           withCredentials: true,
         }
       );
-      alert("게시글이 성공적으로 등록되었습니다.");
+      alert('게시글이 성공적으로 등록되었습니다.');
 
-      history.push("/noticeBoard");
+      history.push('/noticeBoard');
     } catch (error) {
-      console.error("게시글 등록에 실패했습니다:", error);
-      alert("게시글 등록에 실패했습니다. 다시 시도해주세요.");
+      console.error('게시글 등록에 실패했습니다:', error);
+      alert('게시글 등록에 실패했습니다. 다시 시도해주세요.');
     }
   };
 
   // 공지사항 으로
   const noticeCancelClick = () => {
-    history.push("/noticeBoard");
+    history.push('/noticeBoard');
   };
 
   return (
@@ -94,7 +95,7 @@ function NoticeBoardWrite() {
             <div className="notice_write_info">※음란물, 차별, 비하, 혐오 및 초상권, 저작권 침해 게시물은 민, 형사상의 책임을 질 수 있습니다.</div>
           </div>
           <div className="notice_write_content_line">
-            <textarea id="content" value={content} onChange={handleContentChange} className="notice_write_content" placeholder="내용을 입력해주세요."></textarea>
+            <textarea id="content" value={content} onChange={handleContentChange} className="notice_write_content" placeholder="내용을 입력해주세요." wrap="hard"></textarea>
           </div>
           <div className="notice_write_btn_line">
             <button type="submit" className="notice_write_btn">

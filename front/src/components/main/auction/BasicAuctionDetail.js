@@ -74,7 +74,7 @@ function BasicAuctionDetail() {
       return;
     }
     if (parseInt(rankPoint) < parseInt(bidAmount)) {
-      alert(`포인트가 부족함 ㅋ 현재 포인트: ${rankPoint}`);
+      alert(`포인트가 부족합니다. 현재 포인트: ${rankPoint}`);
       return;
     }
 
@@ -88,7 +88,7 @@ function BasicAuctionDetail() {
 
       if (response.status === 200) {
         console.log('Bid submitted successfully');
-        alert('입찰완료ㅋ');
+        alert('입찰완료');
         window.location.reload(); // 페이지 새로고침
       } else {
         // 서버가 성공 이외의 상태 코드를 반환했을 때의 처리
@@ -114,7 +114,7 @@ function BasicAuctionDetail() {
       });
       if (updateResponse.status === 200) {
         console.log('Bid updated successfully');
-        alert('입찰 수정 완료ㅋ');
+        alert('입찰 수정 완료');
         // 업데이트된 포인트 정보를 상태에 반영하거나 필요한 추가 액션 수행
         setIsModalOpen(false); // 수정이 완료되면 모달을 닫음
         window.location.reload(); // 페이지 새로고침

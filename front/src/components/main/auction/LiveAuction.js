@@ -61,7 +61,7 @@ const LiveAuction = () => {
     Swal.fire({
       title: '경매 종료',
       text: '실시간 경매가 종료되었습니다',
-      confirmButtonText: '메인으로',
+      confirmButtonText: '마이페이지로',
       confirmButtonColor: '#000',
       showClass: {
         popup: 'animate__animated animate__fadeInDown',
