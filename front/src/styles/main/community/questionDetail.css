@@ -3,7 +3,7 @@
   margin-top: 20px;
   margin-left: 100px;
   margin-right: 100px;
-  padding-bottom: 35%;
+  padding-bottom: 10%;
 }
 
 .question_detail_main {
@@ -25,6 +25,7 @@
 }
 
 .question_detail_list_all {
+  font-family: 'NanumSquareR';
   width: 100%;
   font-size: 15px;
 }

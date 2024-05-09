@@ -64,20 +64,25 @@ function MyLike() {
                     <img src={art.main_image} alt={art.prdct_nm_korean} />
                     <div className={`auction-status ${getAuctionStatus(auctionData.artData2.find((art2) => art2.artId2 === art.artId)?.basicStartTime, auctionData.artData2.find((art2) => art2.artId2 === art.artId)?.basicEndTime).statusClass}`}>{getAuctionStatus(auctionData.artData2.find((art2) => art2.artId2 === art.artId)?.basicStartTime, auctionData.artData2.find((art2) => art2.artId2 === art.artId)?.basicEndTime).statusText}</div>
                     <div className="image-info">
-                      <h3>{art.prdct_nm_korean}</h3>
+                      <h3 className="image-info_sub">
+                        <p className="image-info_sub">{art.prdct_nm_korean}</p>
+                      </h3>
+                      <p className="image-info_sub1">
+                        분류: {art.prdct_cl_nm}ㆍ작가: {art.writr_nm}
+                      </p>
+
                       <div className="image-details">
-                        <p>분류: {art.prdct_cl_nm}</p>
-                        <p>크기: {art.prdct_stndrd}</p>
-                        <p>기법: {art.matrl_technic}</p>
-                        <p>작가: {art.writr_nm}</p>
                         {auctionData.artData2
                           .filter((art2) => art2.artId2 === art.artId)
                           .map((filteredArt2, index2) => (
                             <div key={index2}>
-                              <p>최소입찰금액: {filteredArt2.min_Mo}</p>
-                              <p>예상입찰금액: {filteredArt2.bid_Amt}</p>
-                              <p>시작일: {formatDateToKST(filteredArt2.basicStartTime)}</p>
-                              <p>종료일: {formatDateToKST(filteredArt2.basicEndTime)}</p>
+                              <div className="image-details2">
+                                <p>
+                                  최소금액: {filteredArt2.min_Mo.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}P / 예상금액: {filteredArt2.bid_Amt.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}P
+                                </p>
+                              </div>
+                              <div className="image-details_btn1">시작일: {formatDateToKST(filteredArt2.basicStartTime)}</div>
+                              <div className="image-details_btn2">종료일: {formatDateToKST(filteredArt2.basicEndTime)}</div>
                             </div>
                           ))}
                       </div>

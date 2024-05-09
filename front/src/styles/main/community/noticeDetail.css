@@ -1,9 +1,10 @@
 .notice_detail_div {
+  font-family: 'NanumSquareR';
   justify-content: center;
   margin-top: 20px;
   margin-left: 100px;
   margin-right: 100px;
-  padding-bottom: 35%;
+  padding-bottom: 10%;
 }
 
 .notice_detail_main {
@@ -20,8 +21,8 @@
 .notice_detail_heder {
   margin-top: -1%;
   font-size: 24px;
-  font-family: "Nanum Gothic", sans-serif;
-  letter-spacing: -1px;
+  font-family: 'NanumSquareR';
+  font-weight: 900;
 }
 
 .notice_detail_list_all {
@@ -56,6 +57,7 @@
 }
 
 .notice_detail_delete {
+  font-family: 'NanumSquareR';
   background-color: black;
   border: none;
   padding: 8px 12px;
@@ -66,6 +68,7 @@
 }
 
 .notice_detail_back {
+  font-family: 'NanumSquareR';
   background-color: black;
   border: none;
   padding: 8px 12px;

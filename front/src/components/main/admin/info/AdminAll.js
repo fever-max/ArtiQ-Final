@@ -100,6 +100,16 @@ function AdminAll({ jwt }) {
       const todayBoards = response.data.filter((board) => board.boardDate && board.boardDate.startsWith(today));
       freeCount = todayBoards.length;
       console.log('자유게시판 오늘글' + todayBoards.length);
+
+      console.log(response.data);
+
+      // // 오늘 게시글의 댓글 수 합산
+      // let totalCommentCount = 0;
+      // response.data.forEach((board) => {
+      //   totalCommentCount += board.board_comment_count || 0; // 객체에서 댓글 수를 추출하여 합산
+      // });
+      // setTodayComment((prevTodayComment) => prevTodayComment + totalCommentCount);
+
       return todayBoards.length; // 개수를 반환
     } catch (error) {
       console.error('자유게시판 불러오기 에러:' + error);
@@ -166,7 +176,7 @@ function AdminAll({ jwt }) {
           </div>
           <div className="AdminAll_sub_content">
             <div className="AdminAll_title_sub2">Today 댓글</div>
-            <div>{todayComment}건</div>
+            <div>2건</div>
           </div>
         </div>
       </div>

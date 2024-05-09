@@ -168,7 +168,7 @@ function AdminPayInfo({ jwt }) {
           <div>
             {/* 결제 번호가 있는 칼럼만 맵핑 */}
             {pointDataList
-              .filter((item) => item.pointCertify)
+              .filter((item) => item.pointCertify && item.pointCertify.startsWith('imp'))
               .map((item) => (
                 <div key={item.pointNo} className="AdminPayInfo_table_sub">
                   <div className="AdminPayInfo_table_name1">{item.pointCertify}</div>

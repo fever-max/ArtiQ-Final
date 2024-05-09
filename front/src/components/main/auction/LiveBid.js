@@ -54,7 +54,7 @@ const LiveBid = ({ liveArtData, endDate, onBidSuccess, setLiveArtData, isOpen, s
       if (!isOpen) {
         fetchUserRank(userEmail);
       }
-    }, 5000); //모달 안열렸을때 5초마다
+    }, 3000); //모달 안열렸을때 5초마다
     return () => clearInterval(intervalId);
   }, [isOpen, userEmail]);
 

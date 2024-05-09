@@ -61,7 +61,8 @@ public class QuestionController {
 
     // 마지막 게시물 번호 업데이트 메서드
     private void updateLastQuestionNumber() {
-        lastQuestionNumber = questionService.getMaxQuestionNumber() != null ? questionService.getMaxQuestionNumber() : 0L;
+        lastQuestionNumber = questionService.getMaxQuestionNumber() != null ? questionService.getMaxQuestionNumber()
+                : 0L;
     }
 
     // 유저 닉네임과 이메일을 반환하는 엔드포인트
@@ -75,10 +76,9 @@ public class QuestionController {
         Map<String, String> response = new HashMap<>();
         response.put("userNickname", nickname);
         response.put("userEmail", userEmail);
-        
 
         return ResponseEntity.ok(response);
-        
+
     }
 
     // 모든 게시글 조회
@@ -90,25 +90,29 @@ public class QuestionController {
 
     // 게시글 등록
     @PostMapping("/question/write")
-    public ResponseEntity<String> saveQuestionBoard(@RequestBody QuestionEntity questionEntity, HttpServletRequest request) {
-        
+    public ResponseEntity<String> saveQuestionBoard(@RequestBody QuestionEntity questionEntity,
+            HttpServletRequest request) {
+
         try {
             String jwtToken = getUserJwtToken(request);
 
             String nickname = jwtTokenProvider.getUserNickname(jwtToken);
             String userEmail = jwtTokenProvider.getUserEmail(jwtToken);
-    
+            String contentWithBr = questionEntity.getQuestionContent().replace("\n", "<br>");
+            System.out.println("넘어온 글: " + contentWithBr);
+
             questionEntity.setUserNickname(nickname);
             questionEntity.setUserEmail(userEmail);
-    
+            questionEntity.setQuestionContent(contentWithBr);
+
             questionEntity.setQuestionNumber(++lastQuestionNumber);
-    
+
             questionService.saveQuestionBoard(questionEntity);
-    
+
             updateLastQuestionNumber();
-    
+
             return ResponseEntity.ok("게시글이 성공적으로 등록되었습니다.");
-    
+
         } catch (Exception e) {
             e.printStackTrace();
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("게시글 등록에 실패했습니다. 다시 시도해주세요.");
@@ -122,22 +126,22 @@ public class QuestionController {
         return ResponseEntity.ok(boardDetail);
     }
 
-     // 조회수 저장 엔드포인트
-     @GetMapping("/questionDetail/increaseViewCount/{questionNumber}")
-     public ResponseEntity<String> saveViewCount(@PathVariable("questionNumber") Long id) {
-     System.out.println("조회수 증가 컨트롤러 실행");
-     try {
-         // 조회수 증가 처리
-         questionService.increaseViewCount(id);
-         return ResponseEntity.ok("조회수 증가 성공");
-     } catch (DataNotFoundException e) {
-         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
-     } catch (Exception e) {
-         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("조회수 증가 실패.");
-     }
- }
+    // 조회수 저장 엔드포인트
+    @GetMapping("/questionDetail/increaseViewCount/{questionNumber}")
+    public ResponseEntity<String> saveViewCount(@PathVariable("questionNumber") Long id) {
+        System.out.println("조회수 증가 컨트롤러 실행");
+        try {
+            // 조회수 증가 처리
+            questionService.increaseViewCount(id);
+            return ResponseEntity.ok("조회수 증가 성공");
+        } catch (DataNotFoundException e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("조회수 증가 실패.");
+        }
+    }
 
-     // 댓글 저장 엔드포인트
+    // 댓글 저장 엔드포인트
     @PostMapping("/questionDetail/saveAnswer")
     public void saveAnswer(@RequestBody AnswerEntity entity) {
         answerService.saveAnswer(entity);

@@ -11,7 +11,7 @@ function FreeBoard() {
   const [data, setData] = useState([]); // 백엔드에서 가져온 데이터
   const history = useHistory(); // 브라우저 히스토리
   const [currentPage, setCurrentPage] = useState(0);
-  const postsPerPage = 15; // 페이지당 아이템 수
+  const postsPerPage = 10; // 페이지당 아이템 수
   const [filteredData, setFilteredData] = useState([]); // 필터링된 데이터
   const [scrollToTop, setScrollToTop] = useState(false); // 맨 위로 스크롤 여부
   const [redirectPath, setRedirectPath] = useState(null); // 리디렉션 경로

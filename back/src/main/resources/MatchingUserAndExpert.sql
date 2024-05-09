@@ -71,3 +71,7 @@ INSERT INTO user_info (user_email,user_pw,user_name,user_tel,user_Birth,user_nic
 
 
 INSERT INTO user_info (user_email,user_pw,user_name,user_tel,user_Birth,user_nickname,user_zipCode,user_addr,user_detail_addr,user_profile,user_role,user_date) VALUES ('a16@naver.com','a16@naver.com','a16','1234567890','2024-01-01','test16','12345','Addr1','Addr2','','ROLE_USER','2024-04-23');
+
+
+INSERT INTO art_request_no (re_order_no, re_genre, req_user_email, re_field, user_name, user_email, re_artwork, re_artist, re_size, re_product_year, original_file_name, save_file_name, image_url, re_details, ap_date, ap_no_message, ap_ok_message) 
+VALUES (1, '인물화', 'fever_max@naver.com', '서양화', '배수지', 'minsu18254@gmail.com', '모나리자', '레오나르도 다 빈치', '53 x 77', '1889', '1234.jpg', '1234.jpg', 'http://localhost:4000/images/202405/1234.jpg', '레오나르도가 죽을 때까지 가지고 있었던 그림', '2024-05-07', '가품입니다', '');

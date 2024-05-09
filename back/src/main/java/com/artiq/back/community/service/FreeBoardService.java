@@ -14,12 +14,12 @@ import com.artiq.back.community.repository.CommentRepository;
 import com.artiq.back.community.repository.FreeBoardRepository;
 
 import lombok.AllArgsConstructor;
+
 @Service
 @AllArgsConstructor
 public class FreeBoardService {
     private final FreeBoardRepository freeBoardRepository;
     private final CommentRepository commentRepository;
-    
 
     // 게시글 생성
     public void saveFreeBoard(FreeBoardEntity freeBoardEntity) {
@@ -33,11 +33,11 @@ public class FreeBoardService {
     }
 
     // 모든 게시글 조회
-    public List<FreeBoardEntity> findAllFreeBoardData(){
+    public List<FreeBoardEntity> findAllFreeBoardData() {
         return freeBoardRepository.findAll();
     }
 
-    // 하나의 게시글 조회 
+    // 하나의 게시글 조회
     public FreeBoardEntity getFreeBoardEntity(Long id) {
         return freeBoardRepository.findById(id)
                 .orElseThrow(() -> new DataNotFoundException("해당하는 게시글이 없습니다. ID: " + id));
@@ -59,7 +59,7 @@ public class FreeBoardService {
         if (board.getBoardDownCount() > 0) {
             board.setBoardDownCount(0);
         }
-    
+
         freeBoardRepository.save(board);
     }
 
@@ -85,7 +85,7 @@ public class FreeBoardService {
         if (board.getBoardUpCount() > 0) {
             board.setBoardUpCount(0);
         }
-    
+
         freeBoardRepository.save(board);
     }
 
@@ -100,7 +100,6 @@ public class FreeBoardService {
         freeBoardRepository.save(board);
     }
 
-
     // 특정 게시글에 추천 수 조회
     public List<FreeBoardEntity> findBoardUpCountByBoardNumber(Long id) {
         return freeBoardRepository.findAllByBoardNumber(id);
@@ -113,18 +112,18 @@ public class FreeBoardService {
 
     // 조회수 수 증가 메서드
     public FreeBoardEntity saveViewCount(Long id) {
-        return freeBoardRepository.findById(id) 
-            .orElseThrow(() -> new DataNotFoundException("해당하는 게시글이 없습니다. ID: " + id));
+        return freeBoardRepository.findById(id)
+                .orElseThrow(() -> new DataNotFoundException("해당하는 게시글이 없습니다. ID: " + id));
     }
 
     // 조회 수 증가
     public void increaseViewCount(Long id) {
         FreeBoardEntity board = freeBoardRepository.findById(id)
                 .orElseThrow(() -> new DataNotFoundException("해당하는 게시글이 없습니다. ID: " + id));
-        
+
         int ViewCount = board.getBoardViewCount();
         board.setBoardViewCount(ViewCount + 1);
-    
+
         freeBoardRepository.save(board);
     }
 
@@ -140,8 +139,8 @@ public class FreeBoardService {
         commentRepository.deleteByBoardNumber(boardNumber2);
         freeBoardRepository.deleteById(boardNumber);
     }
-    
-    //댓글 삭제
+
+    // 댓글 삭제
     public void deleteCount(int commentNumber) {
 
         System.out.println("댓글 삭제 서비스 실행 (프리보드 엔티티 -1)");
@@ -151,21 +150,17 @@ public class FreeBoardService {
         if (entity.isPresent()) {
             System.out.println("해당 댓글 정보가 있음");
             CommentEntity commentEntity = entity.get();
-            boardNumber = (long)(commentEntity.getBoardNumber());
-            System.out.println("받아온 게시글 넘버: "  + boardNumber);
-            Optional<FreeBoardEntity> eOptional =freeBoardRepository.findByBoardNumber(boardNumber);
+            boardNumber = (long) (commentEntity.getBoardNumber());
+            System.out.println("받아온 게시글 넘버: " + boardNumber);
+            Optional<FreeBoardEntity> eOptional = freeBoardRepository.findByBoardNumber(boardNumber);
             if (eOptional.isPresent()) {
                 FreeBoardEntity freeBoardEntity = eOptional.get();
                 int commentCount = freeBoardEntity.getBoardCommentCount();
-                freeBoardEntity.setBoardCommentCount(commentCount-1);
+                freeBoardEntity.setBoardCommentCount(commentCount - 1);
                 freeBoardRepository.save(freeBoardEntity);
             }
         }
-        
+
     }
-
-
-
-
 
 }

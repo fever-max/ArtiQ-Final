@@ -25,6 +25,7 @@ import com.artiq.back.community.service.CommentService;
 import com.artiq.back.community.service.FreeBoardService;
 import com.artiq.back.community.service.VoteService;
 import com.artiq.back.config.security.JwtTokenProvider;
+import com.artiq.back.user.entity.UserEntity;
 
 @RestController
 public class FreeBoardController {
@@ -35,7 +36,8 @@ public class FreeBoardController {
     private Long lastBoardNumber = 0L;
 
     @Autowired
-    public FreeBoardController(FreeBoardService freeBoardService, JwtTokenProvider jwtTokenProvider, CommentService commentService, VoteService voteService) {
+    public FreeBoardController(FreeBoardService freeBoardService, JwtTokenProvider jwtTokenProvider,
+            CommentService commentService, VoteService voteService) {
         this.freeBoardService = freeBoardService;
         this.jwtTokenProvider = jwtTokenProvider;
         this.commentService = commentService;
@@ -85,7 +87,8 @@ public class FreeBoardController {
 
     // 게시글 등록 엔드포인트
     @PostMapping("/freeBoard/write")
-    public ResponseEntity<String> saveFreeBoard(@RequestBody FreeBoardEntity freeboardEntity, HttpServletRequest request) {
+    public ResponseEntity<String> saveFreeBoard(@RequestBody FreeBoardEntity freeboardEntity,
+            HttpServletRequest request) {
         try {
             String jwtToken = getUserJwtToken(request);
 
@@ -125,23 +128,23 @@ public class FreeBoardController {
     // 조회수 저장 엔드포인트
     @GetMapping("/freeBoardDetail/increaseViewCount/{boardNumber}")
     public ResponseEntity<String> saveViewCount(@PathVariable("boardNumber") Long id) {
-    System.out.println("조회수 증가 컨트롤러 실행");
-    try {
-        // 조회수 증가 처리
-        freeBoardService.increaseViewCount(id);
-        return ResponseEntity.ok("조회수 증가 성공");
-    } catch (DataNotFoundException e) {
-        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
-    } catch (Exception e) {
-        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("조회수 증가 실패.");
+        System.out.println("조회수 증가 컨트롤러 실행");
+        try {
+            // 조회수 증가 처리
+            freeBoardService.increaseViewCount(id);
+            return ResponseEntity.ok("조회수 증가 성공");
+        } catch (DataNotFoundException e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("조회수 증가 실패.");
+        }
     }
-}
 
-    //삭제
+    // 삭제
     @DeleteMapping("/freeBoardDetail/{boardNumber}")
     public ResponseEntity<String> deleteBoard(@PathVariable Long boardNumber) {
         try {
-            freeBoardService.deleteBoard(boardNumber); 
+            freeBoardService.deleteBoard(boardNumber);
             return ResponseEntity.ok("게시글이 삭제되었습니다.");
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("게시글 삭제에 실패했습니다.");

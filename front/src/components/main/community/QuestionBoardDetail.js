@@ -200,7 +200,7 @@ function QuestionBoardDetail() {
                 </div>
               </div>
               <div>
-                <div className="board_main_size">{boardData.questionContent}</div>
+                <p style={{ whiteSpace: 'pre-wrap' }}>{boardData.questionContent.replace(/<br>/g, '\n')}</p>
               </div>
 
               <div className="question_detail_comment_count">
